@@ -12,11 +12,11 @@ function drawBall() {
     ctx.arc(x, y, ballRadius, 0, Math.PI*2);
 	
 	//Color Gen
-	var rcolor = Math.floor((Math.random() * 255) + 1);
-	var gcolor = Math.floor((Math.random() * 255) + 1);
-	var bcolor = Math.floor((Math.random() * 255) + 1);
+	var rcolor = Math.floor((Math.random() * 150) + 50);
+	var gcolor = Math.floor((Math.random() * 150) + 50);
+	var bcolor = Math.floor((Math.random() * 150) + 50);
 	
-    ctx.fillStyle = "rgb(" + rcolor + "," + gcolor + "," + bcolor + ")";
+    ctx.fillStyle = "rgb(" + 0 + "," + gcolor + "," + bcolor + ")";
     ctx.fill();
     ctx.closePath();
 }
