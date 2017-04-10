@@ -4,35 +4,147 @@
 
 body {
 	margin:0!important;
+	background-image: url(images/website/bg/transp_bg.png);
 }
 
-canvas { 
-	
-	background: #eee; 
-	display: block; 
-	margin:0 auto;
-	margin-bottom:150px;
-}
-
-.colorme {
-	color:red!important;
-	font-size:50px;
-	text-align:center;
-}
-
-.notificationBar{
+.navbar{
 	background-color:#E3035D;
 	color:white;
 	text-align:center;
+	font-family: 'Khand', sans-serif;
+	font-size:20px;
+	box-shadow:0px 2px 6px rgba(0,0,0,0.4);
+	position: relative;
+	z-index:10;
+	transition:0.2s all;
+	
+}
+.navbar a{
+	
+	color:white;
+	text-decoration: none;
+	padding:5px;
+	padding-left:20px;
+	padding-right:20px;
+	margin-left:-4px;
+	transition:0.2s all;
+	background-color:#E3035D;
+	display:inline-block;
+	
+}
+.navbar a:hover{
+	
+	color:#E3035D;
+	background-color:white;
+	
+}
+
+.bell {
+	
+	color:rgba(255,255,255,1)!important;
+	text-decoration: none;
+	padding:9px!important;
+	padding-left:15px!important;
+	padding-right:15px!important;
+	margin-left:-4px;
+	transition:0.2s all;
+	font-size:15px;
+	background-color:#CB0252!important;
+	float:right;
+	
+}
+.bell:hover{
+	
+	color:rgba(255,255,255,0.4)!important;
+	background-color:#B10248!important;
+	
+}
+
+.notificationBox{
+	background-color: #EFEFEF;
+	margin-top:9px!important;
+	z-index:6;
+	position:absolute;
+	height:0px;
+	width:400px;
+	overflow:hidden;
+	right:0;
+	box-shadow:0px 10px 20px rgba(0,0,0,0.2);
+	animation-timing-function:ease-out;
+	transition:0.3s all;
+	color:#333;
+
+}
+
+.bell:hover .notificationBox{
+	height:500px;
+}
+
+.navbar:hover{
+		box-shadow:0px 2px 30px rgba(0,0,0,0.5);
+}
+
+.navbarnote{
+	position: relative;
+	z-index:8;
+	box-shadow:0px 0px 10px rgba(0,0,0,0.1);
+	background-color:white;
+	color:#4B4B4B;
+	text-align:center;
+	font-family: 'Khand', sans-serif;
+	font-size:20px;
+	padding:5px;
+	padding-bottom:1px!important;
+}
+
+.noteItem{
+	background-color:white;
+	width:380px;
+	padding:10px;
+	margin:10px!important;
+	display:block;
+	margin:0 auto;
+	text-align:left!important;
+	box-shadow:2px 2px 2px rgba(0,0,0,0.1);
+}
+.noteTitle{
+	font-family: 'Slabo 27px', serif;
+	font-size:30px;
+	margin:0px;
+}
+.noteMessage{
+	font-family: 'Slabo 27px', serif;
+	font-size:15px;
+	margin:0px;
 }
 
 #time{
 	display:inline-block;
-	padding:10px;
+	padding:0px;
 	margin:0px;
+	margin-right:30px;
+	margin-bottom:-23px;
 }
 #message{
 	display:inline-block;
-	padding:10px;
+	padding:0px;
 	margin:0px;
+}
+
+canvas { 
+	
+	background: white;
+	border:0px solid #eee;
+	display: block; 
+	margin:0 auto;
+	margin-bottom:150px;
+	box-shadow:3px 3px 35px rgba(0,0,0,0.2);
+}
+
+.colorme {
+	color:#E3035D!important;
+	text-shadow:5px 5px 10px rgba(0,0,0,0.2);
+	font-size:50px;
+	text-align:center;
+	font-family: 'Press Start 2P', cursive;
 }

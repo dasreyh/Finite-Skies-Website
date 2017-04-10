@@ -1,23 +1,40 @@
 <!doctype html>
 <html>
 <head>
+	<!-- FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Abel|Khand|Press+Start+2P|Raleway:300,400|Slabo+27px" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<!-- FILES -->
+	<script type="text/javascript" src="js/jquery.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="js/smoothscroll.js"></script>
 	<meta charset="utf-8">
 	<title>Solstice Project</title>
 </head>
-
 <body>
 <div>
-	<div class="notificationBar">
-		<p id="time"></p>
-		<p id="message"></p>
-		<script type="text/javascript" src="js/time.js"></script>
+	<div class="fullnav">
+		<div class="navbar">
+			<a href="main.html">Home</a>
+			<a href="test1.html">Test1</a>
+			<a href="test2.html">Test2</a>
+			<a class="bell"><i class="fa fa-bell-o" aria-hidden="true"></i>
+				<div class="notificationBox">
+					<div class="noteItem"><p class="noteTitle">Title</p><p class="noteMessage">asdkjnasdkjnasdknasdkjnasdkjnasdkjnasdkjnasdkjn</p></div>
+					<div class="noteItem"><p class="noteTitle">Title</p><p class="noteMessage">asdkjnasdkjnasdknasdkjnasdkjnasdkjnasdkjnasdkjn</p></div>
+					<div class="noteItem"><p class="noteTitle">Give</p><p class="noteMessage">em' the succ</p></div>
+					<div class="noteItem"><p class="noteTitle">Title</p><p class="noteMessage">asdkjnasdkjnasdknasdkjnasdkjnasdkjnasdkjnasdkjn</p></div>
+				</div></a>
+		</div>
+		<div class="navbarnote">
+			<p id="time"></p>
+			<p id="message"></p>
+			<script type="text/javascript" src="js/time.js"></script>
+		</div>
 	</div>
 	<p class="colorme">Give em' the succ</p>
-	
 	<canvas id="gameCanvas" width="1024" height="768"></canvas>
     <script type="text/javascript" src="game/draw.js"></script>
-	
 </div>
 </body>
 </html>

@@ -1,16 +1,16 @@
 var canvas = document.getElementById("gameCanvas");
 var ctx = canvas.getContext("2d");
-var ballRadius = 10;
+var ballRadius = 1;
 var x = canvas.width/2;
 var y = canvas.height-30;
-var dx = 10;
-var dy = -10;
+var dx = 1;
+var dy = -1;
 
 function drawBall() {
 	"use strict";
     ctx.beginPath();
     ctx.arc(x, y, ballRadius, 0, Math.PI*2);
-    ctx.fillStyle = "rgb(" + x + ",10,100)";
+    ctx.fillStyle = "rgb(" + x + ",33," + y + ")";
     ctx.fill();
     ctx.closePath();
 }
