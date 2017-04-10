@@ -6,9 +6,18 @@ body {
 	margin:0!important;
 }
 
+canvas { 
+	
+	background: #eee; 
+	display: block; 
+	margin:0 auto;
+	margin-bottom:150px;
+}
+
 .colorme {
 	color:red!important;
 	font-size:50px;
+	text-align:center;
 }
 
 .notificationBar{
