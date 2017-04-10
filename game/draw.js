@@ -10,7 +10,7 @@ function drawBall() {
 	"use strict";
     ctx.beginPath();
     ctx.arc(x, y, ballRadius, 0, Math.PI*2);
-    ctx.fillStyle = "rgba(0,0,0,0.01)";
+    ctx.fillStyle = "rgb(" + x + ",10,100)";
     ctx.fill();
     ctx.closePath();
 }
