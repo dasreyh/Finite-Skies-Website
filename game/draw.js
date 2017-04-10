@@ -12,6 +12,7 @@ function drawBall() {
     ctx.arc(x, y, ballRadius, 0, Math.PI*2);
 	
 	//Color Gen
+	//  rgbVar = Random number gen           255max 1min
 	var rcolor = Math.floor((Math.random() * 150) + 50);
 	var gcolor = Math.floor((Math.random() * 150) + 50);
 	var bcolor = Math.floor((Math.random() * 150) + 50);
