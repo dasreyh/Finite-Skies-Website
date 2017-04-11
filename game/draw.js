@@ -17,13 +17,13 @@ function drawBall() {
 	var gcolor = Math.floor((Math.random() * 250) + 50);
 	var bcolor = Math.floor((Math.random() * 250) + 150);
 	
-    ctx.fillStyle = "rgba(" + 0 + "," + gcolor + "," + bcolor + ", 0.2)";
+    ctx.fillStyle = "rgba(" + 0 + "," + 150 + "," + 250 + ", 1)";
     ctx.fill();
     ctx.closePath();
 }
 function draw() {
 	"use strict";
-    //ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
     drawBall();
 
     if(x + dx > canvas.width-ballRadius || x + dx < ballRadius) {
