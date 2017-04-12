@@ -6,10 +6,10 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<!-- FILES -->
 	<script type="text/javascript" src="js/jquery.js"></script>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="solstice.css">
 	<link rel="stylesheet" type="text/css" href="nav.css">
 	<meta charset="utf-8">
-	<title>Finite Skies - Home</title>
+	<title>Finite Skies - Solstice</title>
 </head>
 <body>
 <div>
@@ -17,14 +17,11 @@
 		<a href="main.html"><!--<img class="logo logomain" src="images/website/other/finite_logo.png">-->
 		<img class="logo logoglow" src="images/website/other/finite_logo_glow.png"></a>
 	</div>
-	<img id="glados" src="images/website/other/glados.png">
-	<script type="text/javascript" src="js/glados.js"></script>
 	<div class="fullnav">
 		<div class="navbar">
 			<div class="navlinks">
 				<a href="main.html">Home</a>
 				<a href="solstice.html">Solstice</a>
-				<a href="solstice.html">Projects</a>
 			</div>
 			<div class="activitybuttons">
 				<a class="bell">Sign up</a> <!-- Add onClick="function()" -->
@@ -46,11 +43,10 @@
 			<script type="text/javascript" src="js/time.js"></script>
 		</div>
 	</div>
-	
-	<div class="hero">
-		
-	</div>
-
+	<canvas id="gameCanvas" width="1024" height="768">
+		<p>We apologize, your browser does not support HTML canvas at this time :( Error Code: Git Gud</p>
+    </canvas>
+    <script type="text/javascript" src="game/draw.js"></script>
 </div>
 </body>
 </html>
