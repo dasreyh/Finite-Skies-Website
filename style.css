@@ -1,12 +1,42 @@
 @charset "utf-8";
 /* CSS Document */
-
-
+/*  FONTS  */
+@font-face {
+  font-family: 'BigNoodleTitling';
+  src: url('fonts/big_noodle/BigNoodleTitling.woff') format('woff'),
+       url('fonts/big_noodle/BigNoodleTitling.ttf') format('truetype'),
+       url('fonts/big_noodle/BigNoodleTitling.svg#BigNoodleTitling') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'big_noodle_titling';
+  src: url('fonts/big_noodle/big_noodle_titling.eot');
+  src: url('fonts/big_noodle/big_noodle_titling.woff2') format('woff2'),
+       url('fonts/big_noodle/big_noodle_titling.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BigNoodleTitling-Oblique';
+  src: url('fonts/big_noodle_italic/BigNoodleTitling-Oblique.woff') format('woff'),
+       url('fonts/big_noodle_italic/BigNoodleTitling-Oblique.ttf') format('truetype'),
+       url('fonts/big_noodle_italic/BigNoodleTitling-Oblique.svg#BigNoodleTitling-Oblique') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'big_noodle_titling_oblique';
+  src: url('fonts/big_noodle_titling_oblique.eot');
+  src: url('fonts/big_noodle_titling_oblique.woff2') format('woff2'),
+       url('fonts/big_noodle_titling_oblique.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
 	margin:0!important;
 	background-image: url(images/website/bg/transp_bg.png);
 }
-
 .navbar{
 	background-color:#E3035D;
 	color:white;
@@ -17,10 +47,8 @@ body {
 	position: relative;
 	z-index:10;
 	transition:0.2s all;
-	
 }
 .navbar a{
-	
 	color:white;
 	text-decoration: none;
 	padding:5px;
@@ -30,17 +58,12 @@ body {
 	transition:0.2s all;
 	background-color:#E3035D;
 	display:inline-block;
-	
 }
 .navbar a:hover{
-	
 	color:#E3035D;
 	background-color:white;
-	
 }
-
 .bell {
-	
 	color:rgba(255,255,255,1)!important;
 	text-decoration: none;
 	padding:9px!important;
@@ -51,15 +74,11 @@ body {
 	font-size:15px;
 	background-color:#CB0252!important;
 	float:right;
-	
 }
 .bell:hover{
-	
 	color:rgba(255,255,255,0.4)!important;
 	background-color:#B10248!important;
-	
 }
-
 .notificationBox{
 	background-color: #EFEFEF;
 	margin-top:9px!important;
@@ -73,17 +92,13 @@ body {
 	animation-timing-function:ease-out;
 	transition:0.3s all;
 	color:#333;
-
 }
-
 .bell:hover .notificationBox{
 	height:500px;
 }
-
 .navbar:hover{
-		box-shadow:0px 2px 30px rgba(0,0,0,0.5);
+	box-shadow:0px 2px 30px rgba(0,0,0,0.5);
 }
-
 .navbarnote{
 	position: relative;
 	z-index:8;
@@ -96,7 +111,6 @@ body {
 	padding:5px;
 	padding-bottom:1px!important;
 }
-
 .noteItem{
 	background-color:white;
 	width:360px;
@@ -125,7 +139,6 @@ body {
 	font-size:15px;
 	margin:0px;
 }
-
 #time{
 	display:inline-block;
 	padding:0px;
@@ -138,17 +151,17 @@ body {
 	padding:0px;
 	margin:0px;
 }
-
 canvas { 
-	
-	background-image: url(images/website/bg/black.png);
+	background-image: url(images/game/bg/space1.gif); 
+    -moz-background-size:100% 100%; /* Firefox 3.6 */
+    background-size:100% 100%;
+    background-repeat:no-repeat;
 	border:0px solid #eee;
 	display: block; 
 	margin:0 auto;
 	margin-bottom:150px;
 	box-shadow:3px 3px 35px rgba(0,0,0,0.2);
 }
-
 .colorme {
 	color:#E3035D!important;
 	text-shadow:5px 5px 10px rgba(0,0,0,0.2);
@@ -156,7 +169,6 @@ canvas {
 	text-align:center;
 	font-family: 'Press Start 2P', cursive;
 }
-
 #glados {
 	position:absolute;
 	right:0;
