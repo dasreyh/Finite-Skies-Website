@@ -9,6 +9,8 @@ var tick = 0;
 var dx = 1;
 var dy = 2;
 var bounceCount = 0;
+var rightPressed = false;
+var leftPressed = false;
 
 function drawBall() {
 	"use strict";
@@ -33,12 +35,39 @@ function draw() {
         dy = -dy;
 		bounceCount += damping;
     }
-	
-
+	if (rightPressed) {
+		dx = dx + gravity;
+	}
+	if (leftPressed) {
+		dx = dx - gravity;
+	}
 	
     x += dx;	
 	y += dy;
+	
 
+}
+
+document.addEventListener("keydown", keyDownHandler, false);
+document.addEventListener("keyup", keyUpHandler, false);
+
+function keyDownHandler(e) {
+    	"use strict";
+	if(e.keyCode === 39) {
+        rightPressed = true;
+    }
+    else if(e.keyCode === 37) {
+        leftPressed = true;
+    }
+}
+function keyUpHandler(e) {
+       	"use strict";
+	if(e.keyCode === 39) {
+        rightPressed = false;
+    }
+    else if(e.keyCode === 37) {
+        leftPressed = false;
+    }
 }
 
 setInterval(draw, 10);
