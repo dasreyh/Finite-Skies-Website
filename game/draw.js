@@ -13,6 +13,14 @@ var bounceCount = 0;
 var rightPressed = false;
 var leftPressed = false;
 
+
+var img = new Image();
+img.src = 'images/website/other/tracer.gif';
+
+function titleHero(){
+ctx.drawImage(img, 600, 100); 
+}
+
  function menuTitle() {
   ctx.fillStyle = '#f3f3f3';
   ctx.font = '80px BigNoodleTitling-Oblique,big_noodle_titling_oblique,sans-serif';
@@ -56,6 +64,7 @@ function draw() {
 	menuTitle(); // you can return false to this to make it go away!
 	menuList(); // you can return false to this to make it go away!
 	drawBall();
+	titleHero();
 	tick++;
     dy = dy / (bounceCount+1);
 	dy = dy + (gravity);
