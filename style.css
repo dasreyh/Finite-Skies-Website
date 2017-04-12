@@ -112,6 +112,14 @@ body {
 	font-size:30px;
 	margin:0px;
 }
+.noteTitleTop{
+	font-family: 'Slabo 27px', serif;
+	font-size:30px;
+	margin:0px;
+	text-align:center!important;
+	color:#CB0252;
+	margin-top:10px!important;
+}
 .noteMessage{
 	font-family: 'Slabo 27px', serif;
 	font-size:15px;
