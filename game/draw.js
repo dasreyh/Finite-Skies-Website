@@ -3,8 +3,9 @@ var ctx = canvas.getContext("2d");
 var ballRadius = 20;
 var x = canvas.width/2;
 var y = canvas.height-300;
-var gravity = 0.098;
-var damping = 0.001;
+var gravity = 0.098; //higher g = stronger force of gravity
+var damping = 0.001; //higher damp = less bouncy
+var friction = 0.0250; //higher f = more ground friction
 var tick = 0;
 var dx = 1;
 var dy = 2;
@@ -28,12 +29,13 @@ function draw() {
 	tick++;
     dy = dy / (bounceCount+1);
 	dy = dy + (gravity);
-    if(x + dx > canvas.width-ballRadius || x + dx < ballRadius) {
+	if(x + dx > canvas.width-ballRadius || x + dx < ballRadius) {
         dx = -dx;
     }
     if(y + dy > canvas.height-ballRadius || y + dy < ballRadius) {
         dy = -dy;
 		bounceCount += damping;
+		dx = dx / (1 + friction);
     }
 	if (rightPressed) {
 		dx = dx + gravity;
