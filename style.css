@@ -141,7 +141,7 @@ body {
 
 canvas { 
 	
-	background: white;
+	background-image: url(images/website/bg/black.png);
 	border:0px solid #eee;
 	display: block; 
 	margin:0 auto;
