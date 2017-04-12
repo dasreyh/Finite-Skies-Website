@@ -9,17 +9,26 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="js/smoothscroll.js"></script>
 	<meta charset="utf-8">
-	<title>Solstice Project</title>
+	<title>Finite Skies - Home</title>
 </head>
 <body>
 <div>
+	<div class="logo-header">
+		<a href="main.html"><!--<img class="logo logomain" src="images/website/other/finite_logo.png">-->
+		<img class="logo logoglow" src="images/website/other/finite_logo_glow.png"></a>
+	</div>
 	<img id="glados" src="images/website/other/glados.png">
 	<script type="text/javascript" src="js/glados.js"></script>
 	<div class="fullnav">
 		<div class="navbar">
+			<div class="navlinks">
 			<a href="main.html">Home</a>
 			<a href="test1.html">Test1</a>
 			<a href="test2.html">Test2</a>
+			</div>
+			<div class="activitybuttons">
+			<a class="bell">Sign up</a> <!-- Add onClick="function()" -->
+			<a class="bell">Login</a> <!-- Add onClick="function()" -->
 			<a class="bell"><i class="fa fa-bell-o" aria-hidden="true"></i>
 				<div class="notificationBox">
 					<p class="noteTitleTop">Notifications</p>
@@ -28,6 +37,7 @@
 					<div class="noteItem"><p class="noteTitle">Give</p><p class="noteMessage">em' the succ</p></div>
 					<div class="noteItem"><p class="noteTitle">Title</p><p class="noteMessage">asdkjnasdkjnasdknasdkjnasdkjnasdkjnasdkjnasdkjn</p></div>
 				</div></a>
+			</div>
 		</div>
 		<div class="navbarnote">
 			<p id="time"></p>
@@ -35,7 +45,6 @@
 			<script type="text/javascript" src="js/time.js"></script>
 		</div>
 	</div>
-	<p class="colorme">Give em' the succ</p>
 	<canvas id="gameCanvas" width="1024" height="768">
 		<p>We apologize, your browser does not support HTML canvas at this time :( Error Code: Git Gud</p>
     </canvas>
