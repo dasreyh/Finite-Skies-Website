@@ -213,11 +213,3 @@ canvas {
 .logoglow:hover{
 	opacity:0.5;
 }
-.hero p{
-	text-align:center;
-}
-.hero img{
-	display:block;
-	margin:0 auto;
-	margin-top:50px;
-}
