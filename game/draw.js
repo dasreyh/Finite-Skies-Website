@@ -3,12 +3,12 @@ var ctx = canvas.getContext("2d");
 var ballRadius = 20;
 var x = canvas.width/2;
 var y = canvas.height-300;
-var gravity = 0.350; //higher g = stronger force of gravity
-var damping = 0.300; //higher damp = less bouncy
+var gravity = 0.250; //higher g = stronger force of gravity
+var damping = 0.400; //higher damp = less bouncy
 var friction = 0.0250; //higher f = more ground friction
 var tick = 0;
-var dx = 1;
-var dy = 1;
+var dx = 2;
+var dy = 2;
 var bounceCount = 0;
 var rightPressed = false;
 var leftPressed = false;
