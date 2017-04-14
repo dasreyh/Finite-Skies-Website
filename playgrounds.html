@@ -14,6 +14,12 @@
 <body>
 <div>
 	<a href="main.html"><img class="home" src="images/website/other/finite_logo.png"></a>
+	<div style="position:absolute;right:0;color:blue;">
+		<ul>
+			<li><a href="#link1">Link 1</a></li>
+			<li><a href="#link2">Link 2</a></li>
+		</ul>
+	</div>
 	<br>
 	<br>
 	<br>
@@ -37,6 +43,9 @@
 			margin:0 auto;
 			display:block;
 		}
+		h1{
+			text-align:center;
+		}
 	</style>
 	<hr>
 	<h1 style="text-align:center;">Time Snatcher</h1>
@@ -59,7 +68,81 @@
 	<hr>
 	
 	<p style="font-size:20px;" id="changesize">This is a text</p>
-	<button onclick="document.getElementById('changesizes').style.fontsize =  >
+	<button onclick="document.getElementById('changesize').style.fontSize = '40px'">Size me up!!!</button>
+	<hr>
+	
+	<p>Hide the Hanzo Porn</p>
+	<img id="hanzop" src="images/website/playgrounds/hanzofolder.png">
+	<button id="hidep" onclick="document.getElementById('hanzop').style.display = 'none'; document.getElementById('hidep').style.display = 'none'; document.getElementById('showp').style.display = 'block'">Hide that stuff</button>
+	<button style="display:none;" id="showp" onclick="document.getElementById('hanzop').style.display = 'block'; document.getElementById('hidep').style.display = 'block'; document.getElementById('showp').style.display = 'none'">Okay, actually I want to see it...</button>
+	
+	<hr>
+	
+	<h1>Add a number</h1>
+	<p id="numberadd">NUMBER: 0</p>
+	<button onclick="addItUp(); number++">Add a number</button>
+	<script>
+
+	function addItUp(){
+		var number = 1
+	    var numberpaste = "NUMBER: " + number
+		document.getElementById('numberadd').innerHTML = numberpaste
+	}
+	
+	</script>
+	<hr>
+	
+	<p>asd</p>
+	<p>asdasd3</p>
+	<script>
+		document.write(3+43);
+	</script>
+	
+	<hr>
+	
+	<button type="button" onclick="document.write(2+2)">Don't Touch</button>
+	<hr>
+	<p>ALERT!!!!!</p>
+	<button onclick="alertMe()">Alert me please.</button>
+	<script>
+		function alertMe() {
+			
+			window.alert("RUN!!!!");
+			
+		}
+
+		
+		
+	</script>
+	<hr>
+	<p>check the console log.</p>
+	<script>
+		console.log("Stop looking in the console log");
+    </script>
+	<hr>
+	
+	<script>
+	
+	var x,y,z;
+		
+		x=2;
+		y=5;
+		z=8;
+		
+		
+	</script>
+	
+	<hr>
+	<a id="link1"></a>
+	
+	<h1>scientific (exponential) notation</h1>
+	<p>var science = 123e5;</p>
+	<p id="science"></p>
+	<script>
+		var science = 123e5;
+		var scienceResult = "Result: " + science
+		document.getElementById('science').innerHTML = scienceResult;
+	</script>
 	
 </div>
 </body>
