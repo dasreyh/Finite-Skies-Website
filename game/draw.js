@@ -38,6 +38,22 @@ function menuTitle() {
   }
 
 
+	
+// MENU MUSIC 
+//You might want to mute this some times... its annoying.
+myAudio = new Audio('game/audio/music/menu.mp3'); 
+if (typeof myAudio.loop == 'boolean'){
+    myAudio.loop = true;
+}else{
+    myAudio.addEventListener('ended', function() {
+        this.currentTime = 0;
+        this.play();
+    }, false);
+}
+myAudio.play();
+	
+
+
 
  function menuCredits() {
   ctx.fillStyle = 'rgba(255,255,255,0.15)';
