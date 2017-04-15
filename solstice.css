@@ -63,11 +63,12 @@ body {
 	background-color:rgba(255,255,255,0.2);
 	color:#F3025C;
 }
-.gameAlerts2{
+#gameAlerts2{
 	z-index:200;
 	background-color:rgba(243,2,92,1.00);
 	position:absolute;
 	right:50px;
+	display:block;
 	color:rgba(255,255,255,1);
 	text-align:center;
 	border:1px solid rgba(255,255,255,1);
@@ -84,15 +85,15 @@ body {
     -ms-user-select: none; /* IE10+ */
 	cursor:nesw-resize!important;
 }
-.gameAlerts2:hover{
+#gameAlerts2:hover{
 	
 	background-color:rgba(255,255,255,0.2);
 	color:#F3025C;
 }
-.gameAlerts2 p{
+#gameAlerts2 p{
 	display:none;
 }
-.gameAlerts2:hover p{
+#gameAlerts2:hover p{
 	display:block;
 }
 canvas { 
