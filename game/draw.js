@@ -12,12 +12,13 @@ var fontSize = 50;
 
 function menuTitle() {
   ctx.fillStyle = '#f3f3f3';
-  ctx.font = '80px BigNoodleTitling-Oblique,big_noodle_titling_oblique,sans-serif';
+  ctx.font = '120px BigNoodleTitling-Oblique,big_noodle_titling_oblique,sans-serif';
   ctx.textBaseline = 'middle';
-  ctx.fillText('SOLSTICE', 50, 80);
+  ctx.fillText('SOLSTICE', 50, 90);
   }
 
  function menuList() {
+<<<<<<< HEAD
   if(relativeX > 50 && relativeX< 150 && relativeY > 160 && relativeY < 220) {
 	  play(true);
   } else {
@@ -33,6 +34,23 @@ function menuTitle() {
   } else {
 	  settings(false);
   }
+=======
+  ctx.fillStyle = '#f3f3f3';
+  ctx.font = '50px BigNoodleTitling-Oblique,big_noodle_titling_oblique,sans-serif';
+  ctx.textBaseline = 'middle';
+  ctx.fillText('Play', 50, 260);
+  ctx.fillText('Help', 50, 320);
+  ctx.fillText('Settings', 50, 380);
+  }
+
+
+
+ function menuCredits() {
+  ctx.fillStyle = 'rgba(255,255,255,0.15)';
+  ctx.font = '14px Abel,sans-serif';
+  ctx.textBaseline = 'middle';
+  ctx.fillText('Created by - Sebastian Hamel & Brendan Weirtz | COPYRIGHT 2017 FINITE SKIES, ALL RIGHTS RESERVED', 20, 1060);
+>>>>>>> origin/master
   }
 
 function play(playHover) {
@@ -96,7 +114,8 @@ function draw() {
 	//drawRect();
 	menuTitle(); // you can return false to this to make it go away!
 	menuList(); 
-
+	menuCredits();
+		
 	ball1.draw(gravity,friction,damping,leftPressed,rightPressed);
 	ball2.draw(gravity,friction,damping,leftPressed,rightPressed);
 	ball3.draw(gravity,friction,damping,leftPressed,rightPressed);
