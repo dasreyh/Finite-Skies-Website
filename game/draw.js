@@ -22,17 +22,17 @@ function menuTitle() {
 
  function menuList() {
 
-  if(relativeX > 50 && relativeX< 150 && relativeY > 160 && relativeY < 220) {
+  if(relativeX > 50 && relativeX< 150 && relativeY > 275 && relativeY < 325) {
 	  play(true);
   } else {
 	  play(false);
   }
-  if(relativeX > 50 && relativeX< 150 && relativeY > 220 && relativeY < 280) {
+  if(relativeX > 50 && relativeX< 150 && relativeY > 325 && relativeY < 375) {
 	  help(true);
   } else {
 	  help(false);
   }
-  if(relativeX > 50 && relativeX< 200 && relativeY > 280 && relativeY < 340) {
+  if(relativeX > 50 && relativeX< 200 && relativeY > 375 && relativeY < 425) {
 	  settings(true);
   } else {
 	  settings(false);
@@ -112,16 +112,6 @@ var ball1 = new ballObj(canvas.width/2,canvas.height-250,5,100,200,200,ctx,canva
 var ball2 = new ballObj(canvas.width/2,canvas.height-250,10,250,10,200,ctx,canvas);
 var ball3 = new ballObj(canvas.width/2,canvas.height-250,15,250,150,200,ctx,canvas);
 var ball4 = new ballObj(canvas.width/2,canvas.height-250,20,100,10,250,ctx,canvas);
-
-
-function drawRect() {
-	"use strict";
-    ctx.beginPath();
-	ctx.rect(canvas.width/2-20,0,40,canvas.height);	
-    ctx.fillStyle = "rgba(" + 100 + "," + 30 + "," + 180 + ", 1)";
-    ctx.fill();
-    ctx.closePath();
-}
 
 function draw() {
 	"use strict";
