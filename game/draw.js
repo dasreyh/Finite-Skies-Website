@@ -46,6 +46,24 @@ function ballObj(x,y,radius,r,g,b) {
 	};	
 }
 
+function menuTitle() {
+  	"use strict";
+	ctx.fillStyle = '#f3f3f3';
+  ctx.font = '80px BigNoodleTitling-Oblique,big_noodle_titling_oblique,sans-serif';
+  ctx.textBaseline = 'middle';
+  ctx.fillText('SOLSTICE', 50, 80);
+  }
+
+ function menuList() {
+  	"use strict";
+	 ctx.fillStyle = '#f3f3f3';
+  ctx.font = '50px BigNoodleTitling-Oblique,big_noodle_titling_oblique,sans-serif';
+  ctx.textBaseline = 'middle';
+  ctx.fillText('Play', 50, 200);
+  ctx.fillText('Help', 50, 260);
+  ctx.fillText('Settings', 50, 320);
+  }
+
 var ball1 = new ballObj(canvas.width/2,canvas.height-250,5,100,200,200);
 var ball2 = new ballObj(canvas.width/2,canvas.height-250,10,250,10,200);
 var ball3 = new ballObj(canvas.width/2,canvas.height-250,15,250,150,200);
@@ -66,12 +84,15 @@ function draw() {
 	"use strict";
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 	drawRect();
+	menuTitle(); // you can return false to this to make it go away!
+	menuList(); 
 	ball1.draw(gravity);
 	ball2.draw(gravity);
 	ball3.draw(gravity);
 	ball4.draw(gravity);
 	ball5.draw(gravity);
 	ball6.draw(gravity);
+// you can return false to this to make it go away!
 	requestAnimationFrame(draw);
 }
 
