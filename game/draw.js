@@ -1,54 +1,14 @@
 var canvas = document.getElementById("gameCanvas");
 var ctx = canvas.getContext("2d");
-//var ballRadius = 20;
-//var x = canvas.width/2;
-//var y = canvas.height-300;
 var gravity = 0.250; //higher g = stronger force of gravity
 var damping = 0.400; //higher damp = less bouncy
 var friction = 0.0500; //higher f = more ground friction
-//var dx = 2;
-//var dy = 2;
 var rightPressed = false;
 var leftPressed = false;
+var relativeX;
+var relativeY;
+var fontSize = 50;
 
-
-
-
-
-function ballObj(x,y,radius,r,g,b) {
-	"use strict";	
-	var dx = 0;
-	var dy = 0;
-	this.draw = function (gravity,friction,damping) {
-    ctx.beginPath();
-    ctx.arc(x, y, radius, 0, Math.PI*2);
-    ctx.fillStyle = "rgba(" + r + "," + g + "," + b + ", 1)";
-    ctx.fill();
-    ctx.closePath();
-	dy = dy + (gravity);
-	if(x + dx > canvas.width-radius+1 || x + dx < radius) {
-        dx = -dx;
-    }
-    if(y + dy > canvas.height-radius+1 || y + dy < radius) {
-        dy = -dy;
-		dx = dx / (1 + friction);
-		dy = dy / (1 + damping);
-	}
-	
-	if (x > canvas.width/2-20 && x < canvas.width/2+20) {
-		dy = -2;
-	}
-	if (rightPressed) {
-		dx = dx + gravity;
-	}
-	if (leftPressed) {
-		dx = dx - gravity;
-	}
-	
-    x += dx;	
-	y += dy;
-	};	
-}
 
 function menuTitle() {
   ctx.fillStyle = '#f3f3f3';
@@ -58,21 +18,67 @@ function menuTitle() {
   }
 
  function menuList() {
-  ctx.fillStyle = '#f3f3f3';
-  ctx.font = '50px BigNoodleTitling-Oblique,big_noodle_titling_oblique,sans-serif';
-  ctx.textBaseline = 'middle';
-  ctx.fillText('Play', 50, 200);
-  ctx.fillText('Help', 50, 260);
-  ctx.fillText('Settings', 50, 320);
+  if(relativeX > 50 && relativeX< 150 && relativeY > 160 && relativeY < 220) {
+	  play(true);
+  } else {
+	  play(false);
   }
+  if(relativeX > 50 && relativeX< 150 && relativeY > 220 && relativeY < 280) {
+	  help(true);
+  } else {
+	  help(false);
+  }
+  if(relativeX > 50 && relativeX< 200 && relativeY > 280 && relativeY < 340) {
+	  settings(true);
+  } else {
+	  settings(false);
+  }
+  }
+
+function play(playHover) {
+	if(playHover) {
+		ctx.fillStyle = '#f3f3f3';
+  		ctx.textBaseline = 'middle';
+		ctx.font = 80 + 'px BigNoodleTitling-Oblique,big_noodle_titling_oblique,sans-serif';
+		ctx.fillText('Play', 50, 200);
+	} else {
+		ctx.fillStyle = '#f3f3f3';
+  		ctx.textBaseline = 'middle';
+		ctx.font = 50 + 'px BigNoodleTitling-Oblique,big_noodle_titling_oblique,sans-serif';
+		ctx.fillText('Play', 50, 200);
+	}
+}
+function help(helpHover) {
+	if(helpHover) {
+		ctx.fillStyle = '#f3f3f3';
+  		ctx.textBaseline = 'middle';
+		ctx.font = 80 + 'px BigNoodleTitling-Oblique,big_noodle_titling_oblique,sans-serif';
+		ctx.fillText('Help', 50, 250);
+	} else {
+		ctx.fillStyle = '#f3f3f3';
+  		ctx.textBaseline = 'middle';
+		ctx.font = 50 + 'px BigNoodleTitling-Oblique,big_noodle_titling_oblique,sans-serif';
+		ctx.fillText('Help', 50, 250);
+	}
+}
+function settings(settingsHover) {
+	if(settingsHover) {
+		ctx.fillStyle = '#f3f3f3';
+  		ctx.textBaseline = 'middle';
+		ctx.font = 80 + 'px BigNoodleTitling-Oblique,big_noodle_titling_oblique,sans-serif';
+		ctx.fillText('Settings', 50, 300);
+	} else {
+		ctx.fillStyle = '#f3f3f3';
+  		ctx.textBaseline = 'middle';
+		ctx.font = 50 + 'px BigNoodleTitling-Oblique,big_noodle_titling_oblique,sans-serif';
+		ctx.fillText('Settings', 50, 300);
+	}
+}
 
 var ball1 = new ballObj(canvas.width/2,canvas.height-250,5,100,200,200,ctx,canvas);
 var ball2 = new ballObj(canvas.width/2,canvas.height-250,10,250,10,200,ctx,canvas);
 var ball3 = new ballObj(canvas.width/2,canvas.height-250,15,250,150,200,ctx,canvas);
 var ball4 = new ballObj(canvas.width/2,canvas.height-250,20,100,10,250,ctx,canvas);
-
-
-
 
 
 function drawRect() {
@@ -100,6 +106,7 @@ function draw() {
 
 document.addEventListener("keydown", keyDownHandler, false);
 document.addEventListener("keyup", keyUpHandler, false);
+document.addEventListener("mousemove", mouseMoveHandler, false);
 
 function keyDownHandler(e) {
     	"use strict";
@@ -117,6 +124,13 @@ function keyUpHandler(e) {
     }
     else if(e.keyCode === 37) {
         leftPressed = false;
+    }
+}
+function mouseMoveHandler(e) {
+    relativeX = e.clientX - canvas.offsetLeft;
+	relativeY = e.clientY - canvas.offsetTop;
+    if(relativeX > 0 && relativeX < canvas.width) {
+        
     }
 }
 
