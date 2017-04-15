@@ -18,7 +18,7 @@ function menuTitle() {
   }
 
  function menuList() {
-<<<<<<< HEAD
+
   if(relativeX > 50 && relativeX< 150 && relativeY > 160 && relativeY < 220) {
 	  play(true);
   } else {
@@ -34,13 +34,7 @@ function menuTitle() {
   } else {
 	  settings(false);
   }
-=======
-  ctx.fillStyle = '#f3f3f3';
-  ctx.font = '50px BigNoodleTitling-Oblique,big_noodle_titling_oblique,sans-serif';
-  ctx.textBaseline = 'middle';
-  ctx.fillText('Play', 50, 260);
-  ctx.fillText('Help', 50, 320);
-  ctx.fillText('Settings', 50, 380);
+
   }
 
 
@@ -50,7 +44,7 @@ function menuTitle() {
   ctx.font = '14px Abel,sans-serif';
   ctx.textBaseline = 'middle';
   ctx.fillText('Created by - Sebastian Hamel & Brendan Weirtz | COPYRIGHT 2017 FINITE SKIES, ALL RIGHTS RESERVED', 20, 1060);
->>>>>>> origin/master
+
   }
 
 function play(playHover) {
