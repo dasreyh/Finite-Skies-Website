@@ -11,10 +11,13 @@ var fontSize = 50;
 
 
 function menuTitle() {
-  ctx.fillStyle = '#f3f3f3';
-  ctx.font = '120px BigNoodleTitling-Oblique,big_noodle_titling_oblique,sans-serif';
-  ctx.textBaseline = 'middle';
-  ctx.fillText('SOLSTICE', 50, 90);
+	
+	
+  logo_image = new Image();
+  logo_image.src = 'game/images/logo2.png';
+  var logoWidth = 980; //1920
+  var logoHeight = 286; //532
+  ctx.drawImage(logo_image, 0, 0, logoWidth, logoHeight);
   }
 
  function menuList() {
@@ -68,12 +71,12 @@ function play(playHover) {
 		ctx.fillStyle = '#f3f3f3';
   		ctx.textBaseline = 'middle';
 		ctx.font = 80 + 'px BigNoodleTitling-Oblique,big_noodle_titling_oblique,sans-serif';
-		ctx.fillText('Play', 50, 200);
+		ctx.fillText('Play', 50, 300);
 	} else {
 		ctx.fillStyle = '#f3f3f3';
   		ctx.textBaseline = 'middle';
 		ctx.font = 50 + 'px BigNoodleTitling-Oblique,big_noodle_titling_oblique,sans-serif';
-		ctx.fillText('Play', 50, 200);
+		ctx.fillText('Play', 50, 300);
 	}
 }
 function help(helpHover) {
@@ -81,12 +84,12 @@ function help(helpHover) {
 		ctx.fillStyle = '#f3f3f3';
   		ctx.textBaseline = 'middle';
 		ctx.font = 80 + 'px BigNoodleTitling-Oblique,big_noodle_titling_oblique,sans-serif';
-		ctx.fillText('Help', 50, 250);
+		ctx.fillText('Help', 50, 350);
 	} else {
 		ctx.fillStyle = '#f3f3f3';
   		ctx.textBaseline = 'middle';
 		ctx.font = 50 + 'px BigNoodleTitling-Oblique,big_noodle_titling_oblique,sans-serif';
-		ctx.fillText('Help', 50, 250);
+		ctx.fillText('Help', 50, 350);
 	}
 }
 function settings(settingsHover) {
@@ -94,12 +97,12 @@ function settings(settingsHover) {
 		ctx.fillStyle = '#f3f3f3';
   		ctx.textBaseline = 'middle';
 		ctx.font = 80 + 'px BigNoodleTitling-Oblique,big_noodle_titling_oblique,sans-serif';
-		ctx.fillText('Settings', 50, 300);
+		ctx.fillText('Settings', 50, 400);
 	} else {
 		ctx.fillStyle = '#f3f3f3';
   		ctx.textBaseline = 'middle';
 		ctx.font = 50 + 'px BigNoodleTitling-Oblique,big_noodle_titling_oblique,sans-serif';
-		ctx.fillText('Settings', 50, 300);
+		ctx.fillText('Settings', 50, 400);
 	}
 }
 
