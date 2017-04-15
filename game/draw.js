@@ -66,10 +66,10 @@ function menuTitle() {
   ctx.fillText('Settings', 50, 320);
   }
 
-var ball1 = new ballObj(canvas.width/2,canvas.height-250,5,100,200,200);
-var ball2 = new ballObj(canvas.width/2,canvas.height-250,10,250,10,200);
-var ball3 = new ballObj(canvas.width/2,canvas.height-250,15,250,150,200);
-var ball4 = new ballObj(canvas.width/2,canvas.height-250,20,100,10,250);
+var ball1 = new ballObj(canvas.width/2,canvas.height-250,5,100,200,200,ctx,canvas);
+var ball2 = new ballObj(canvas.width/2,canvas.height-250,10,250,10,200,ctx,canvas);
+var ball3 = new ballObj(canvas.width/2,canvas.height-250,15,250,150,200,ctx,canvas);
+var ball4 = new ballObj(canvas.width/2,canvas.height-250,20,100,10,250,ctx,canvas);
 
 
 
@@ -91,10 +91,10 @@ function draw() {
 	menuTitle(); // you can return false to this to make it go away!
 	menuList(); 
 
-	ball1.draw(gravity,friction,damping);
-	ball2.draw(gravity,friction,damping);
-	ball3.draw(gravity,friction,damping);
-	ball4.draw(gravity,friction,damping);
+	ball1.draw(gravity,friction,damping,leftPressed,rightPressed);
+	ball2.draw(gravity,friction,damping,leftPressed,rightPressed);
+	ball3.draw(gravity,friction,damping,leftPressed,rightPressed);
+	ball4.draw(gravity,friction,damping,leftPressed,rightPressed);
 	requestAnimationFrame(draw);
 }
 
