@@ -51,16 +51,14 @@ function ballObj(x,y,radius,r,g,b) {
 }
 
 function menuTitle() {
-  	"use strict";
-	ctx.fillStyle = '#f3f3f3';
+  ctx.fillStyle = '#f3f3f3';
   ctx.font = '80px BigNoodleTitling-Oblique,big_noodle_titling_oblique,sans-serif';
   ctx.textBaseline = 'middle';
   ctx.fillText('SOLSTICE', 50, 80);
   }
 
  function menuList() {
-  	"use strict";
-	 ctx.fillStyle = '#f3f3f3';
+  ctx.fillStyle = '#f3f3f3';
   ctx.font = '50px BigNoodleTitling-Oblique,big_noodle_titling_oblique,sans-serif';
   ctx.textBaseline = 'middle';
   ctx.fillText('Play', 50, 200);
