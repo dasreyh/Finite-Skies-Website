@@ -36,6 +36,7 @@
 body {
 	margin:0!important;
 	background-image: url(images/website/bg/transp_bg.png);
+	cursor:crosshair;
 }
 .canvasdiv{
 	width:100%;
@@ -64,11 +65,12 @@ body {
 }
 .gameAlerts2{
 	z-index:200;
+	background-color:rgba(243,2,92,1.00);
 	position:absolute;
 	right:50px;
-	color:rgba(255,255,255,0.3);
-
-	border:1px solid rgba(255,255,255,0.3);
+	color:rgba(255,255,255,1);
+	text-align:center;
+	border:1px solid rgba(255,255,255,1);
 	padding-left:10px;
 	padding-right:10px;
 	padding-top:5px;
@@ -77,11 +79,21 @@ body {
 	border-radius:5px;
 	font-family:BigNoodleTitling-Oblique;
 	text-decoration: none;transition:0.2s all;
+	-webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+	cursor:nesw-resize!important;
 }
 .gameAlerts2:hover{
 	
 	background-color:rgba(255,255,255,0.2);
 	color:#F3025C;
+}
+.gameAlerts2 p{
+	display:none;
+}
+.gameAlerts2:hover p{
+	display:block;
 }
 canvas { 
 	background-image: url(images/game/bg/2.gif); 
@@ -95,4 +107,7 @@ canvas {
     left: 0;
     bottom: 0;
     right: 0;
+	image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
 }
