@@ -42,6 +42,47 @@ body {
     padding-top: 56.25%; /* 16:9 Aspect Ratio */
 	position:relative!important;
 }
+.gameAlerts{
+	z-index:200;
+	position:absolute;
+	right:0;
+	color:#000;
+	background-color:rgba(255,255,255,0.7);
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:5px;
+	padding-bottom:5px;
+	margin:5px;
+	border-radius:5px;
+	font-family:BigNoodleTitling-Oblique;
+	text-decoration: none;transition:0.2s all;
+}
+.gameAlerts:hover{
+	
+	background-color:rgba(255,255,255,0.2);
+	color:#F3025C;
+}
+.gameAlerts2{
+	z-index:200;
+	position:absolute;
+	right:50px;
+	color:rgba(255,255,255,0.3);
+
+	border:1px solid rgba(255,255,255,0.3);
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:5px;
+	padding-bottom:5px;
+	margin:5px;
+	border-radius:5px;
+	font-family:BigNoodleTitling-Oblique;
+	text-decoration: none;transition:0.2s all;
+}
+.gameAlerts2:hover{
+	
+	background-color:rgba(255,255,255,0.2);
+	color:#F3025C;
+}
 canvas { 
 	background-image: url(images/game/bg/space1.gif); 
     -moz-background-size:100% 100%; /* Firefox 3.6 */
