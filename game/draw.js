@@ -13,22 +13,6 @@ var leftPressed = false;
 
 
 
-//APPLE
-var appleSprite = new Image();
-appleSprite.src = "images/game/assets/appleSprite.png";
-
-
-function sprite (options) {
-				
-    var that = {};
-					
-    that.context = options.context;
-    that.width = options.width;
-    that.height = options.height;
-    that.image = options.image;
-
-    return that;
-}
 
 
 function ballObj(x,y,radius,r,g,b) {
@@ -108,21 +92,11 @@ function draw() {
 	drawRect();
 	menuTitle(); // you can return false to this to make it go away!
 	menuList(); 
-<<<<<<< HEAD
-	ball1.draw(gravity);
-	ball2.draw(gravity);
-	ball3.draw(gravity);
-	ball4.draw(gravity);
 
-=======
 	ball1.draw(gravity,friction,damping);
 	ball2.draw(gravity,friction,damping);
 	ball3.draw(gravity,friction,damping);
 	ball4.draw(gravity,friction,damping);
-	ball5.draw(gravity,friction,damping);
-	ball6.draw(gravity,friction,damping);
->>>>>>> origin/master
-// you can return false to this to make it go away!
 	requestAnimationFrame(draw);
 }
 
