@@ -27,9 +27,9 @@
 }
 @font-face {
   font-family: 'big_noodle_titling_oblique';
-  src: url('fonts/big_noodle_titling_oblique.eot');
-  src: url('fonts/big_noodle_titling_oblique.woff2') format('woff2'),
-       url('fonts/big_noodle_titling_oblique.eot?#iefix') format('embedded-opentype');
+  src: url('fonts/big_noodle_italic/big_noodle_titling_oblique.eot');
+  src: url('fonts/big_noodle_italic/big_noodle_titling_oblique.woff2') format('woff2'),
+       url('fonts/big_noodle_italic/big_noodle_titling_oblique.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }

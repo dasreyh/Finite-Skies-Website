@@ -68,8 +68,10 @@ var ball1 = new ballObj(canvas.width/2,canvas.height-250,5,100,200,200);
 var ball2 = new ballObj(canvas.width/2,canvas.height-250,10,250,10,200);
 var ball3 = new ballObj(canvas.width/2,canvas.height-250,15,250,150,200);
 var ball4 = new ballObj(canvas.width/2,canvas.height-250,20,100,10,250);
-var ball5 = new ballObj(canvas.width/2,canvas.height-250,25,200,10,250);
-var ball6 = new ballObj(canvas.width/2,canvas.height-250,30,70,10,700);
+
+
+
+
 
 function drawRect() {
 	"use strict";
@@ -90,8 +92,7 @@ function draw() {
 	ball2.draw(gravity);
 	ball3.draw(gravity);
 	ball4.draw(gravity);
-	ball5.draw(gravity);
-	ball6.draw(gravity);
+
 // you can return false to this to make it go away!
 	requestAnimationFrame(draw);
 }
