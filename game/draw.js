@@ -11,6 +11,26 @@ var friction = 0.0500; //higher f = more ground friction
 var rightPressed = false;
 var leftPressed = false;
 
+
+
+//APPLE
+var appleSprite = new Image();
+appleSprite.src = "images/game/assets/appleSprite.png";
+
+
+function sprite (options) {
+				
+    var that = {};
+					
+    that.context = options.context;
+    that.width = options.width;
+    that.height = options.height;
+    that.image = options.image;
+
+    return that;
+}
+
+
 function ballObj(x,y,radius,r,g,b) {
 	"use strict";	
 	var dx = 0;
