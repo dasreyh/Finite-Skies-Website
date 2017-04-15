@@ -87,7 +87,7 @@ function drawRect() {
 function draw() {
 	"use strict";
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
-	drawRect();
+	//drawRect();
 	menuTitle(); // you can return false to this to make it go away!
 	menuList(); 
 
