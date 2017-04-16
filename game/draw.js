@@ -51,11 +51,11 @@ if (typeof myAudio.loop == 'boolean'){
     myAudio.addEventListener('ended', function() {
         this.currentTime = 0;
 		this.volume=.1;
-        this.play();
+//        this.play();
     }, false);
 }
 myAudio.volume=.1;
-myAudio.play();
+//myAudio.play();
 	
 
 
