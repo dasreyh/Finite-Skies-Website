@@ -7,8 +7,7 @@ var rightPressed = false;
 var leftPressed = false;
 var relativeX;
 var relativeY;
-var fontSize = 50;
-
+var click;
 
 function menuTitle() {
 	
@@ -50,13 +49,20 @@ if (typeof myAudio.loop == 'boolean'){
 }else{
     myAudio.addEventListener('ended', function() {
         this.currentTime = 0;
-		this.volume=.1;
+		this.volume=0.1;
         this.play();
     }, false);
 }
 myAudio.volume=.1;
 myAudio.play();
-	
+
+var clickSound = new Audio('game/audio/effect/laser1.mp3'); 
+    clickSound.addEventListener('ended', function() {
+        this.currentTime = 0;
+		this.volume=0.1;
+        //this.play();
+    }, false);
+clickSound.volume=0.1;	
 
 
 
@@ -74,6 +80,7 @@ function play(playHover) {
   		ctx.textBaseline = 'middle';
 		ctx.font = 80 + 'px BigNoodleTitling-Oblique,big_noodle_titling_oblique,sans-serif';
 		ctx.fillText('Play', 50, 300);
+		playSound(clickSound,click);		
 	} else {
 		ctx.fillStyle = '#f3f3f3';
   		ctx.textBaseline = 'middle';
@@ -131,6 +138,8 @@ function draw() {
 document.addEventListener("keydown", keyDownHandler, false);
 document.addEventListener("keyup", keyUpHandler, false);
 document.addEventListener("mousemove", mouseMoveHandler, false);
+document.addEventListener("mousedown", mouseDownHandler, false);
+document.addEventListener("mouseup", mouseUpHandler, false);
 
 function keyDownHandler(e) {
     	"use strict";
@@ -153,9 +162,17 @@ function keyUpHandler(e) {
 function mouseMoveHandler(e) {
     relativeX = e.clientX - canvas.offsetLeft;
 	relativeY = e.clientY - canvas.offsetTop;
-    if(relativeX > 0 && relativeX < canvas.width) {
-        
-    }
+}
+function mouseDownHandler(e) {
+ click = true;
+}
+function mouseUpHandler(e) {
+ click = false;
+}
+function playSound(sound,isTrue) {
+	if(isTrue) {
+		sound.play();
+	}
 }
 
 draw();
