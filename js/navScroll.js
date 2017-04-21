@@ -15,14 +15,20 @@ var vscroll = document.body.scrollTop;
 		document.getElementById('navbar').style.background = "white";
 		document.getElementById('navbar').style.boxShadow = "0px 4px 10px rgba(0,0,0,0.1)";
 		document.getElementById('navbar').style.top = "0";
-		document.getElementById('navbar a').style.color = "black";
+		var elements = document.getElementsByClassName('navlink'), i, len;
+  		  for (i = 0, len = elements.length; i < len; i++) {
+          elements[i].style.color = 'black';
+          }
 	}else{
 		document.getElementById('navbar').style.position = null;
 		document.getElementById('navbar-logo').style.opacity = null;
 		document.getElementById('navbar').style.background = null;
 		document.getElementById('navbar').style.boxShadow = null;
 		document.getElementById('navbar').style.top = null;
-		document.getElementById('navbar a').style.color = null;
+		var elementsUndo = document.getElementsByClassName('navlink'), j, ben;
+  		  for (j = 0, ben = elementsUndo.length; j < ben; j++) {
+          elementsUndo[j].style.color = null;
+          }
 	}
 	
 	
