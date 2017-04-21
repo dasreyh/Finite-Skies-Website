@@ -12,8 +12,8 @@ var click;
 function menuTitle() {
 	
 	
-  logo_image = new Image();
-  logo_image.src = 'game/images/logo2.png';
+  var logo_image = new Image();
+  logo_image.src = '../games/solstice_light_rider/images/logo/logo2.png';
   var logoWidth = 980; //1920
   var logoHeight = 286; //532
   ctx.drawImage(logo_image, 0, 0, logoWidth, logoHeight);
@@ -43,8 +43,8 @@ function menuTitle() {
 	
 // MENU MUSIC 
 //You might want to mute this some times... its annoying.
-myAudio = new Audio('game/audio/music/menu.mp3'); 
-if (typeof myAudio.loop == 'boolean'){
+var myAudio = new Audio('../games/solstice_light_rider/audio/music/menu.mp3'); 
+if (typeof myAudio.loop === 'boolean'){
     myAudio.loop = true;
 }else{
     myAudio.addEventListener('ended', function() {
@@ -53,10 +53,10 @@ if (typeof myAudio.loop == 'boolean'){
         this.play();
     }, false);
 }
-myAudio.volume=.1;
+myAudio.volume=0.1;
 myAudio.play();
 
-var clickSound = new Audio('game/audio/effect/laser1.mp3'); 
+var clickSound = new Audio('../games/solstice_light_rider/audio/effect/laser1.mp3'); 
     clickSound.addEventListener('ended', function() {
         this.currentTime = 0;
 		this.volume=0.1;
@@ -67,8 +67,8 @@ clickSound.volume=0.1;
 
 
  function menuCredits() {
-  ctx.fillStyle = 'rgba(255,255,255,0.15)';
-  ctx.font = '14px Abel,sans-serif';
+  ctx.fillStyle = 'rgba(255,255,255,1)';
+  ctx.font = '16px Abel,sans-serif';
   ctx.textBaseline = 'middle';
   ctx.fillText('Created by - Sebastian Hamel & Brendan Weirtz | COPYRIGHT 2017 FINITE SKIES, ALL RIGHTS RESERVED', 20, 1060);
 
