@@ -8,21 +8,20 @@
 	color:white;
 	text-align:center;
 	font-family: 'Khand', sans-serif;
-	font-size:20px;
+	font-size:18px;
 	position: absolute;
 	z-index:10;
 	width:100%;
 	transition:0.2s all;
 	left:0;
-
 }
 
 #navbar-logo{
 	display:inline-block;
-	max-height:25px;
+	max-width:140px;
 	position:absolute;
 	left:10px;
-	top:7px;
+	top:8px;
 	opacity:0;
 }
 
@@ -35,6 +34,7 @@
 	margin-left:-4px;
 	transition:0.2s all;
 	display:inline-block;
+	padding-bottom:3px;
 }
 #navbar a:hover{
 	color:#E3035D;
@@ -43,7 +43,7 @@
 .bell {
 	color:rgba(255,255,255,1)!important;
 	text-decoration: none;
-	padding:9px!important;
+	padding:6.3px!important;
 	padding-left:15px!important;
 	padding-right:15px!important;
 	margin-left:0px!important;
@@ -78,7 +78,7 @@
 }
 .navbarnote{
 	position: relative;
-	top:40px;
+	top:34px;
 	z-index:8;
 	box-shadow:0px 0px 10px rgba(0,0,0,0.1);
 	background-color:white;
@@ -136,13 +136,12 @@
 }
 #logo-header{
 	background-color:white;
-
 	opacity:1;
 	overflow:hidden;
 	transition: height 0.2s,opacity 0.5s;
 }
 #logo-image{
-
+	width:100%;
     margin: 0 auto;
 	max-width:400px;
 	display:block;
