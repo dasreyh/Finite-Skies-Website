@@ -37,6 +37,43 @@ body {
 	margin:0!important;
 	background-image: url(../images/bg/transp_bg.png);
 }
+
+.shadow{
+	box-shadow: 5px 5px 50px rgba(0,0,0,0.2);
+}
+
+.hero{
+	margin:100px;
+	
+	position:relative;
+	top:35px;
+}
+.hero1{
+    width: 100%;
+	max-width:1000px;
+    height:563px;
+	float:left;
+}
+
+
+.hero2{
+	position:absolute;
+	right:0;
+	width:100%;
+	max-width:650px;
+	float:left;
+
+	
+	
+}
+
+.hero2sub{
+	display:block;
+	height:154.3px;
+	margin-bottom:50px;
+	background-color:steelblue;
+}
+
 #glados {
 	position:absolute;
 	right:0;
@@ -44,11 +81,4 @@ body {
 	max-width:600px;
 	display:none;
 }
-.hero p{
-	text-align:center;
-}
-.hero img{
-	display:block;
-	margin:0 auto;
-	margin-top:50px;
-}
+
