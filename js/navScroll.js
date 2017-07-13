@@ -11,11 +11,9 @@ var vscroll = document.body.scrollTop;
 	if (vscroll > 182) {
 		document.getElementById('navbar').style.top = "0";
 		document.getElementById('navbar').style.position = "fixed";
-		document.getElementById('navbar-logo').style.opacity = "1";
 	}else{
 		document.getElementById('navbar').style.top = null;
 		document.getElementById('navbar').style.position = null;
-		document.getElementById('navbar-logo').style.opacity = "0";
 	}
 }
 window.setInterval(getNavPosition, 1);

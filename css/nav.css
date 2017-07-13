@@ -16,6 +16,7 @@
 	width: 100%;
 	transition: 0.2s all;
 	left: 0;
+	top:none;
 }
  @-webkit-keyframes AnimationName {
  0% {

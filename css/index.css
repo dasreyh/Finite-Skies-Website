@@ -41,6 +41,21 @@
 	padding-top: 250px;
 	padding-bottom: 250px;
 	margin-top: 31px;
+	overflow:hidden!important;
+	position:relative;
+	box-shadow:0px 5px 30px rgba(0,0,0,0.6);
+
+
+
+
+}
+.about{
+	background-color:white;
+	padding-top:90px;
+	padding-bottom:90px;
+}
+.about p {
+	margin: 0px;
 }
 .hero-head h1 {
 	margin: 0px;
@@ -112,4 +127,10 @@ body {
 	color: white;
 	font-size: 90%;
 	font-weight: 300;
+}
+.hero-rocket{
+	position:absolute;
+	top:40px;
+	right:50px;
+	max-width:140px;
 }
