@@ -13,6 +13,13 @@
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/nav.css">
 	<link rel="stylesheet" type="text/css" href="css/buttons.css">
+	<!-- FAVICON -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
 	
 <!-- META -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -42,6 +49,26 @@
 <meta property="fb:admins" content="weirtz" />
 </head>
 <body>
+
+	<!-- FACEBOOK SDK -->
+	<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1962351674042688',
+      xfbml      : true,
+      version    : 'v2.9'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 
 	<div id="logo-header">
 		<img id="logo-image" src="images/logo/sorbert_logo.png">
@@ -89,6 +116,12 @@
   
 			
 		</div>
+		<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
 
 	
 
