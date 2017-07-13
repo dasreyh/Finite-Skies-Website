@@ -2,13 +2,13 @@
 function getNavPosition(){    
 var vscroll = document.body.scrollTop;    
 
-	if (vscroll > 20) {
+	if (vscroll > 160) {
 		document.getElementById('logo-image').style.opacity = "0";
 	}else{
 		document.getElementById('logo-image').style.opacity = "1";
 	}
 	
-	if (vscroll > 95) {
+	if (vscroll > 182) {
 		document.getElementById('navbar').style.top = "0";
 		document.getElementById('navbar').style.position = "fixed";
 		document.getElementById('navbar-logo').style.opacity = "1";
@@ -26,5 +26,4 @@ function Getpostion(){
 var vscroll = document.body.scrollTop;    
 alert(vscroll);
 }
-
 */

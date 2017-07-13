@@ -38,7 +38,7 @@ body {
 	background-image: url(../images/bg/transp_bg.png);
 }
 .shadow{
-	box-shadow: 5px 5px 50px rgba(0,0,0,0.2);
+	box-shadow: 10px 10px 50px rgba(0,0,0,0.4);
 }
 
 .text-shadow{
@@ -61,7 +61,7 @@ body {
 }
 
 .hero-text{
-	/*background-color:rgba(255,255,255,0.75);*/
+	background-color:rgba(0,0,0,0.7);
 	text-align:center;
 	margin:0 auto;
 	position: relative;

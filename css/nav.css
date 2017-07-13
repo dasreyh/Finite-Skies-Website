@@ -1,188 +1,259 @@
-﻿#navbar{
+﻿#navbar {
 	/* OLD BG background-color:#E3035D; */
 
-background: linear-gradient(225deg, #9d00e3, #af06ce, #e8188b, #ff2071);
-background-size: 800% 800%;
-
--webkit-animation: AnimationName 18s ease infinite;
--moz-animation: AnimationName 18s ease infinite;
--o-animation: AnimationName 18s ease infinite;
-animation: AnimationName 18s ease infinite;
-	
-		color:white;
-	text-align:center;
+	background: linear-gradient(270deg, #d820ff, #ff7468);
+	background-size: 400% 400%;
+	-webkit-animation: AnimationName 19s ease infinite;
+	-moz-animation: AnimationName 19s ease infinite;
+	-o-animation: AnimationName 19s ease infinite;
+	animation: AnimationName 19s ease infinite;
+	color: white;
+	text-align: center;
 	font-family: 'Khand', sans-serif;
-	font-size:18px;
+	font-size: 18px;
 	position: absolute;
-	z-index:10;
-	width:100%;
-	transition:0.2s all;
-	left:0;
+	z-index: 10;
+	width: 100%;
+	transition: 0.2s all;
+	left: 0;
 }
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:93% 0%}
-    50%{background-position:0% 100%}
-    100%{background-position:93% 0%}
+ @-webkit-keyframes AnimationName {
+ 0% {
+background-position:0% 50%
+}
+ 50% {
+background-position:100% 50%
+}
+ 100% {
+background-position:0% 50%
+}
 }
 @-moz-keyframes AnimationName {
-    0%{background-position:93% 0%}
-    50%{background-position:0% 100%}
-    100%{background-position:93% 0%}
+ 0% {
+background-position:0% 50%
+}
+ 50% {
+background-position:100% 50%
+}
+ 100% {
+background-position:0% 50%
+}
 }
 @-o-keyframes AnimationName {
-    0%{background-position:93% 0%}
-    50%{background-position:0% 100%}
-    100%{background-position:93% 0%}
+ 0% {
+background-position:0% 50%
 }
-@keyframes AnimationName { 
-    0%{background-position:93% 0%}
-    50%{background-position:0% 100%}
-    100%{background-position:93% 0%}
+ 50% {
+background-position:100% 50%
 }
-
-#navbar-logo{
-	display:inline-block;
-	max-width:180px;
-	position:absolute;
-	left:5px;
-	top:3px;
-	opacity:0.2;
-	user-drag: none; 
+ 100% {
+background-position:0% 50%
+}
+}
+@keyframes AnimationName {
+ 0% {
+background-position:0% 50%
+}
+ 50% {
+background-position:100% 50%
+}
+ 100% {
+background-position:0% 50%
+}
+}
+#navbar-logo {
+	display: inline-block;
+	max-width: 180px;
+	position: absolute;
+	left: 5px;
+	top: 3px;
+	opacity: 0.2;
+	user-drag: none;
 	user-select: none;
 	-moz-user-select: none;
 	-webkit-user-drag: none;
 	-webkit-user-select: none;
 	-ms-user-select: none;
 }
-
-#navbar a{
-	color:white;
+#navbar a {
+	color: white;
 	text-decoration: none;
-	padding:5px;
-	padding-left:20px;
-	padding-right:20px;
-	margin-left:-4px;
-	transition:0.2s all;
-	display:inline-block;
-	padding-bottom:3px;
+	padding: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: -4px;
+	transition: 0.2s all;
+	display: inline-block;
+	padding-bottom: 3px;
 }
-#navbar a:hover{
-	color:#E3035D;
-	background-color:white;
+#navbar a:hover {
+	color: #252525;
+	background-color: white;
 }
 .bell {
-	color:rgba(255,255,255,1)!important;
+	color: rgba(255,255,255,1)!important;
 	text-decoration: none;
-	padding:6.3px!important;
-	padding-left:15px!important;
-	padding-right:15px!important;
-	margin-left:0px!important;
-	transition:0.2s all;
-	font-size:15px;
-	background-color:rgba(0,0,0,0.1)!important;
-	float:right;
+	padding: 6.3px!important;
+	padding-left: 15px!important;
+	padding-right: 15px!important;
+	margin-left: 0px!important;
+	transition: 0.2s all;
+	font-size: 15px;
+	background-color: rgba(0,0,0,0.1)!important;
+	float: right;
 }
-.bell:hover{
-	color:rgba(255,255,255,0.4)!important;
-	background-color:rgba(0,0,0,0.2)!important;
+.bell:hover {
+	color: rgba(255,255,255,0.4)!important;
+	background-color: rgba(0,0,0,0.2)!important;
 }
-.notificationBox{
+.notificationBox {
 	background-color: #EFEFEF;
-	margin-top:9px!important;
-	z-index:6;
-	position:absolute;
-	height:0px;
-	width:400px;
-	overflow:hidden;
-	right:0;
-	box-shadow:0px 10px 20px rgba(0,0,0,0.2);
-	animation-timing-function:ease-out;
-	transition:0.3s all;
-	color:#333;
+	margin-top: 9px!important;
+	z-index: 6;
+	position: absolute;
+	height: 0px;
+	width: 400px;
+	overflow: hidden;
+	right: 0;
+	box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+	animation-timing-function: ease-out;
+	transition: 0.3s all;
+	color: #333;
 }
-.bell:hover .notificationBox{
-	height:500px;
+.bell:hover .notificationBox {
+	height: 500px;
 }
-.navbarnote{
+.navbarnote {
 	position: relative;
-	top:34px;
-	z-index:8;
-	box-shadow:0px 0px 10px rgba(0,0,0,0.1);
-	background-color:white;
-	color:#4B4B4B;
-	text-align:center;
+	top: 34px;
+	z-index: 8;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+	background-color: white;
+	color: #4B4B4B;
+	text-align: center;
 	font-family: 'Khand', sans-serif;
-	font-size:20px;
-	padding:5px;
-	padding-bottom:1px!important;
+	font-size: 20px;
+	padding: 5px;
+	padding-bottom: 1px!important;
 }
-.activitybuttons{
-	position:absolute;
-	top:0;
-	right:0;
+.activitybuttons {
+	position: absolute;
+	top: 0;
+	right: 0;
 }
-.noteItem{
-	background-color:white;
-	width:360px;
-	padding:10px;
-	display:block;
-	margin:0 auto;
-	margin-top:10px!important;
-	text-align:left!important;
-	box-shadow:2px 2px 2px rgba(0,0,0,0.1);
+.noteItem {
+	background-color: white;
+	width: 360px;
+	padding: 10px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 10px!important;
+	text-align: left!important;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
 }
-.noteTitle{
+.noteTitle {
 	font-family: 'Slabo 27px', serif;
-	font-size:30px;
-	margin:0px;
+	font-size: 30px;
+	margin: 0px;
 }
-.noteTitleTop{
+.noteTitleTop {
 	font-family: 'Slabo 27px', serif;
-	font-size:30px;
-	margin:0px;
-	text-align:center!important;
-	color:#CB0252;
-	margin-top:10px!important;
+	font-size: 30px;
+	margin: 0px;
+	text-align: center!important;
+	color: #CB0252;
+	margin-top: 10px!important;
 }
-.noteMessage{
+.noteMessage {
 	font-family: 'Slabo 27px', serif;
-	font-size:15px;
-	margin:0px;
+	font-size: 15px;
+	margin: 0px;
 }
-#time{
-	display:inline-block;
-	padding:0px;
-	margin:0px;
-	margin-right:30px;
-	margin-bottom:-23px;
+#time {
+	display: inline-block;
+	padding: 0px;
+	margin: 0px;
+	margin-right: 30px;
+	margin-bottom: -23px;
 }
-#message{
-	display:inline-block;
-	padding:0px;
-	margin:0px;
+#message {
+	display: inline-block;
+	padding: 0px;
+	margin: 0px;
 }
-#logo-header{
-	background-color:white;
-	opacity:1;
-	overflow:hidden;
-	transition: height 0.2s,opacity 0.5s;
+#logo-header {
+	background-color: white;
+	opacity: 1;
+	overflow: hidden;
+	transition: height 0.2s, opacity 0.5s;
 }
-#logo-image{
-	width:100%;
-    margin: 0 auto;
-	max-width:400px;
-	display:block;
-	padding:20px;
-	user-drag: none; 
+#logo-image {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 300px;
+	display: block;
+	padding: 20px;
+	user-drag: none;
 	user-select: none;
 	-moz-user-select: none;
 	-webkit-user-drag: none;
 	-webkit-user-select: none;
 	-ms-user-select: none;
-	opacity:1;
-	transition:0.6s all;
+	opacity: 1;
+	transition: 0.6s all;
 }
-#logo-image:hover{
-	opacity:0.5;
+#logo-image:hover {
+	opacity: 0.5;
+}
+.sub-footer-dev {
+	background-color: #ffffff;
+	border-bottom: 1px solid rgba(0,0,0,0.12);
+	color: #999999;
+	font-weight: 100;
+	font-size: 14px;
+	text-align: center;
+	overflow: hidden;
+	padding: 3px;
+}
+.sub-footer-dev-links {
+	display : inline;
+	margin-left: -2px;
+	margin-right: -2px;
+	background-color: transparent;
+	padding: 10px 15px;
+	-webkit-transition: all 0.2s; /* Safari */
+	transition: all 0.2s;
+	-webkit-transition-timing-function: ease;
+	transition-timing-function: ease;
+	text-decoration: none;
+	font-family: "omnes-pro";
+}
+.sub-footer-dev-links:hover {
+	background-color: rgba(0,0,0,0.2);
+	color: white;
+}
+.copyright {
+	color: #999999;
+	text-align: center;
+	font-size: 13px;
+	margin: 0px;
+}
+.footer p {
+	font-family: "rift-soft"!important;
+}
+.apricity-referral {
+	text-align: center;
+	color: rgba(0,0,0,0.3);
+	font-size: 10px;
+	margin-top: -10px;
+	margin: 0px;
+}
+.apricity-referral a {
+	color: #999999;
+	margin: 0px;
+	text-decoration: none;
+}
+.footer {
+	background-color: white;
+	padding: 13px;
 }
