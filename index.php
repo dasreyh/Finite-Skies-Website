@@ -1,116 +1,88 @@
 <?php include_once('header.php'); ?>
 
+<!-- insert images here -->
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=1962351674042688";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+<link rel="stylesheet" type="text/css" href="css/image-paster.css">
 
 
-	<!-- FACEBOOK SDK -->
-	<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '1962351674042688',
-      xfbml      : true,
-      version    : 'v2.9'
-    });
-    FB.AppEvents.logPageView();
-  };
+<!-- The Modal -->
+<div id="myModal" class="modal">
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
+  <!-- The Close Button -->
+  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
 
-	<div id="logo-header">
-		<img id="logo-image" src="images/logo/sorbert_logo.png">
-	</div>
-	<img id="glados" src="images/other/glados.png">
-	<script type="text/javascript" src="js/glados.js"></script>
-	<div class="fullnav">
-		<div id="navbar">
-			<div class="navlinks"> 
-				<a class="navlink" href="index.html">HOME</a>
-				<a class="navlink" href="solstice.html">SOLSTICE</a>
-				<a class="navlink" href="solstice.html">PROJECTS</a>
-				<a class="navlink" href="https://xenforo.com/">FORUMS</a>
-				<a class="navlink" href="minecraft.html">MINECRAFT</a>
-				<a class="navlink" href="playgrounds.html">PLAYGROUNDS</a>
-			</div>
-			<div class="activitybuttons">
-				<a class="bell">Sign up</a> <!-- Add onClick="function()" -->
-				<a class="bell">Login</a> <!-- Add onClick="function()" -->
-				<a class="bell"><i class="fa fa-bell-o" aria-hidden="true"></i>
-					<div class="notificationBox">
-					<p class="noteTitleTop">Notifications</p>
-					<div class="noteItem"><p class="noteTitle">Title</p><p class="noteMessage">asdkjnasdkjnasdknasdkjnasdkjnasdkjnasdkjnasdkjn</p></div>
-					<div class="noteItem"><p class="noteTitle">Title</p><p class="noteMessage">asdkjnasdkjnasdknasdkjnasdkjnasdkjnasdkjnasdkjn</p></div>
-					<div class="noteItem"><p class="noteTitle">Give</p><p class="noteMessage">em' the succ</p></div>
-					<div class="noteItem"><p class="noteTitle">Title</p><p class="noteMessage">asdkjnasdkjnasdknasdkjnasdkjnasdkjnasdkjnasdkjn</p></div>
-					</div>
-				</a>
-			</div>
-		</div>
-		<div class="navbarnote">
-			<p id="time"></p>
-			<p id="message"></p>
-			<script type="text/javascript" src="js/time.js"></script>
-		</div>
-	</div>
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+
+
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    Select image to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload Image" name="submit">
+</form>
+   
+<div style="margin:1em auto; width:333px; text-align:center;">
+ <form action="upload_audio.php" method="POST" enctype="multipart/form-data"> 
+  Upload AUDIO File: <input type="file" name="fileup" /><br/>
+  <input type="submit" name='submit' value="Upload" /> 
+ </form>
+</div>
+
+<style>
+
+</style>
+
+
+
+
 	
 	<div class="hero-head">
 	
 		
-		<h1>Welcome to Finite Skies</h1>
-		<p>Serving up entertainment since Minecraft 1.7.3 BETA</p>
-		<img class="hero-rocket" src="images/home/rocket.png">
-  
-			
-	</div>
-	<div class="about">
-		<div>
-			<p>We are Finite Skies</p>
-			<p>
-				In 2011 Finite Skies started as just a little Minecraft server named "Seabreyh City" catering towards a small game going large. Today we are developing Minecraft mods for players to enjoy, Videos and Livestreams for many to watch, and a community for all to join. We are always up to something new so head over to the forums now to see what we are currently up to.  
-  
-			</p>
-		</div>
-	</div>	
-		
-		
-		
-		
-		
-		
-		<iframe src="https://discordapp.com/widget?id=83001142363033600&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
-		<div
-  class="fb-like"
-  data-share="true"
-  data-width="450"
-  data-show-faces="true">
+		<div class="audio-container">
+<script src="ins-audio.php"></script>
+
 </div>
 
-	
+<div class="image-container">
+<script src="ins-imgs.php"></script>
+</div>
 
-
-<div class="twitch" style="background-color:#6441a5;">
+<script>
 	
-<a href="https://www.twitch.tv/dasreyh" target="_blank">
-<p class="t-top">We live steam on Twitch.tv often. Join us for a good time!</p>
-<br>
-<p style="text-align:center;"><i style="color:white;font-size:700%;" class="fa fa-twitch"></i></p>
-<p class="t-middle">If we're not online,</p>
-<p class="t-bottom">Follow Us on Twitch to get notified when we are! <i class="fa fa-angle-double-right"></i></p>
-</a>		
+	
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = $('.myImg');
+var modalImg = $("#img01");
+var captionText = document.getElementById("caption");
+$('.myImg').click(function(){
+    modal.style.display = "block";
+    var newSrc = this.src;
+    modalImg.attr('src', newSrc);
+    captionText.innerHTML = this.alt;
+});
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+modal.onclick = function() {
+  modal.style.display = "none";
+}
+$(document).keypress(function(e) { 
+    if (e.keyCode == 27) { 
+        modal.style.display = "none";
+    } 
+});
+
+</script>
 	
 </div>
 

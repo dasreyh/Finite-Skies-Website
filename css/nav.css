@@ -1,14 +1,11 @@
-﻿#navbar {
+﻿
+
+#navbar {
 	/* OLD BG background-color:#E3035D; */
 
-	background: linear-gradient(270deg, #d820ff, #ff7468);
-	background-size: 400% 400%;
-	-webkit-animation: AnimationName 19s ease infinite;
-	-moz-animation: AnimationName 19s ease infinite;
-	-o-animation: AnimationName 19s ease infinite;
-	animation: AnimationName 19s ease infinite;
+	background-color:white;
 	color: white;
-	text-align: center;
+	text-align: right;
 	font-family: 'Khand', sans-serif;
 	font-size: 18px;
 	position: absolute;
@@ -17,6 +14,17 @@
 	transition: 0.2s all;
 	left: 0;
 	top:none;
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.color-bar{
+	background: rgb(231,63,196);
+background: -moz-linear-gradient(-45deg, rgba(231,63,196,1) 0%, rgba(255,206,104,1) 100%);
+background: -webkit-linear-gradient(-45deg, rgba(231,63,196,1) 0%,rgba(255,206,104,1) 100%);
+background: linear-gradient(135deg, rgba(231,63,196,1) 0%,rgba(255,206,104,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e73fc4', endColorstr='#ffce68',GradientType=1 );
+	height:63px;
+	width:100%;
+	position: relative;
 }
  @-webkit-keyframes AnimationName {
  0% {
@@ -77,19 +85,57 @@ background-position:0% 50%
 	-ms-user-select: none;
 }
 #navbar a {
-	color: white;
+	color: #252525;
 	text-decoration: none;
-	padding: 5px;
+	padding: 15px;
+	padding-bottom: 13px;
 	padding-left: 20px;
 	padding-right: 20px;
 	margin-left: -4px;
 	transition: 0.2s all;
 	display: inline-block;
-	padding-bottom: 3px;
 }
+
+.navlinks{
+	margin:0 auto;
+	max-width:1300px;
+	position: relative;
+}
+
+.fullnav{
+	position: relative;
+	padding-top:7px;
+}
+
+.navlogo img{
+	max-height:30px;
+}
+.navlogo{
+	position:absolute;
+	left:20px;
+	top:13px;
+	z-index: 1000;
+	pointer-events: none;
+	padding:0px!important;
+}
+
+#navbar a .navlogo:hover{
+		color: rgba(37,37,37,0.0)!important;
+		background-color:rgba(255,255,255,0.00)!important;
+
+}
+
+
 #navbar a:hover {
-	color: #252525;
-	background-color: white;
+	color: white;
+	background: rgb(231,63,196);
+	background: -moz-linear-gradient(-45deg, rgba(231,63,196,1) 0%, rgba(255,206,104,1) 100%);
+	background: -webkit-linear-gradient(-45deg, rgba(231,63,196,1) 0%,rgba(255,206,104,1) 100%);
+	background: linear-gradient(135deg, rgba(231,63,196,1) 0%,rgba(255,206,104,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e73fc4', endColorstr='#ffce68',GradientType=1 );
+	background-size: 300%!important;
+	background-position: right!important;
+	
 }
 .bell {
 	color: rgba(255,255,255,1)!important;
@@ -107,6 +153,7 @@ background-position:0% 50%
 	color: rgba(255,255,255,0.4)!important;
 	background-color: rgba(0,0,0,0.2)!important;
 }
+
 .notificationBox {
 	background-color: #EFEFEF;
 	margin-top: 9px!important;
@@ -125,17 +172,22 @@ background-position:0% 50%
 	height: 500px;
 }
 .navbarnote {
-	position: relative;
-	top: 34px;
+	position: absolute;
+	top: 90px;
+	right:20px;
 	z-index: 8;
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-	background-color: white;
+	background-color: red;
 	color: #4B4B4B;
 	text-align: center;
 	font-family: 'Khand', sans-serif;
 	font-size: 20px;
 	padding: 5px;
 	padding-bottom: 1px!important;
+}
+.navbarnote input{
+	display: block;
+	margin:0 auto;
 }
 .activitybuttons {
 	position: absolute;
@@ -191,7 +243,7 @@ background-position:0% 50%
 #logo-image {
 	width: 100%;
 	margin: 0 auto;
-	max-width: 300px;
+	max-width: 150px;
 	display: block;
 	padding: 20px;
 	user-drag: none;

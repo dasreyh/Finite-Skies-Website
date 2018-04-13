@@ -1,3 +1,6 @@
+
+<?php session_start();?>
+
 <!doctype html>
 <html>
 <head>
@@ -8,7 +11,6 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<!-- FILES -->
 	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/navScroll.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/nav.css">
 	<link rel="stylesheet" type="text/css" href="css/buttons.css">
@@ -48,5 +50,80 @@
 	<meta name="twitter:image" content="http://finiteskies.com/images/social_icons/facebook.png" />
 </head>
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=1962351674042688";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+	<!-- FACEBOOK SDK -->
+	<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1962351674042688',
+      xfbml      : true,
+      version    : 'v2.9'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+	<div class="color-bar">
+		<div class="fullnav">
+		<div id="navbar">
+			<div class="navlinks"> 
+				<a class="navlogo" href="/../index.php"><img src="images/logo/sorbert_logo_flat4.png"></a>
+				<a class="navlink" href="index.php">HOME</a>
+				<a class="navlink" href="solstice.html">SOLSTICE</a>
+				<a class="navlink" href="solstice.html">PROJECTS</a>
+				<a class="navlink" href="https://xenforo.com/">FORUMS</a>
+				<a class="navlink" href="minecraft.html">MINECRAFT</a>
+				<a class="navlink" href="playgrounds.html">PLAYGROUNDS</a>
+			</div>
+		</div>
+	</div>
+	
+		<div class="navbarnote">
+			<p id="time"></p>
+			<p id="message"></p>
+			<script type="text/javascript" src="js/time.js"></script>
+			<div class="nav-login">
+				<?php
+				if(isset($_SESSION['u_id'])){
+					echo '<form action="includes/logout.inc.php" method="POST">
+							<button type="submit" name="submit">Logout</button>
+						  </form>';
+				} else{
+					echo '<form action="includes/login.inc.php" method="POST">
+					<input type="text" name="uid" placeholder="Username/Email">
+					<input type="password" name="pwd" placeholder="Password">
+					<button type="submit" name="submit">Login</button>
+				</form>
+				<a class="signupbutton" href="signup.php">Sign Up</a>';
+				}
+				
+				?>
+			</div>
+		</div>
+	</div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-1720964959256584",
+          enable_page_level_ads: true
+     });
+</script>
 
 
