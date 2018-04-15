@@ -1,90 +1,52 @@
 <?php include_once('header.php'); ?>
 
-<!-- insert images here -->
 
-<link rel="stylesheet" type="text/css" href="css/image-paster.css">
+<div class="hero" id="hero">
 
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- The Close Button -->
-  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-
-  <!-- Modal Content (The Image) -->
-  <img class="modal-content" id="img01">
-
-  <!-- Modal Caption (Image Text) -->
-  <div id="caption"></div>
+	<div class="hero-content">
+	
+		<h1>WELCOME TO FINITE SKIES</h1>
+		<p>HOME TO CREATORS</p>
+		
+	</div>
+	
 </div>
 
-
-<form action="upload.php" method="post" enctype="multipart/form-data">
-    Select image to upload:
-    <input type="file" name="fileToUpload" id="fileToUpload">
-    <input type="submit" value="Upload Image" name="submit">
-</form>
-   
-<div style="margin:1em auto; width:333px; text-align:center;">
- <form action="upload_audio.php" method="POST" enctype="multipart/form-data"> 
-  Upload AUDIO File: <input type="file" name="fileup" /><br/>
-  <input type="submit" name='submit' value="Upload" /> 
- </form>
-</div>
 
 <style>
 
+	#hero{
+   		background-size: cover;
+		height:60vh;
+		text-align: center;
+  		display: flex;
+		align-items: center;
+		justify-content: center;
+	    color:white;
+		background-image:;
+	}
+	
 </style>
 
-
-
-
-	
-	<div class="hero-head">
-	
-		
-		<div class="audio-container">
-<script src="ins-audio.php"></script>
-
-</div>
-
-<div class="image-container">
-<script src="ins-imgs.php"></script>
-</div>
-
 <script>
+$('.hero').css('background-image','url(assets/images/home/hero-2.jpg)');
 	
+	var images=['assets/images/home/hero-1.jpg) 50% no-repeat;',
+			'assets/images/home/hero-2.jpg) 50% no-repeat;',
+			'assets/images/home/hero-3.jpg) 50% no-repeat;'];
 	
-// Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = $('.myImg');
-var modalImg = $("#img01");
-var captionText = document.getElementById("caption");
-$('.myImg').click(function(){
-    modal.style.display = "block";
-    var newSrc = this.src;
-    modalImg.attr('src', newSrc);
-    captionText.innerHTML = this.alt;
-});
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-modal.onclick = function() {
-  modal.style.display = "none";
-}
-$(document).keypress(function(e) { 
-    if (e.keyCode == 27) { 
-        modal.style.display = "none";
-    } 
-});
-
+	var url=0;
+	
+	setInterval(function(){
+	   url+=1;
+	  if(url==2){
+		url=0;
+	  }
+	  document.getElementById("hero").style.backgroundImage = 'url('+images[url]+')';
+	},5000);
+	
 </script>
-	
-</div>
+
 
 
 <?php include_once('footer.php'); ?>

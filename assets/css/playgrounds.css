@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+/*  FONTS  */
+@font-face {
+  font-family: 'BigNoodleTitling';
+  src: url('fonts/big_noodle/BigNoodleTitling.woff') format('woff'),
+       url('fonts/big_noodle/BigNoodleTitling.ttf') format('truetype'),
+       url('fonts/big_noodle/BigNoodleTitling.svg#BigNoodleTitling') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'big_noodle_titling';
+  src: url('fonts/big_noodle/big_noodle_titling.eot');
+  src: url('fonts/big_noodle/big_noodle_titling.woff2') format('woff2'),
+       url('fonts/big_noodle/big_noodle_titling.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BigNoodleTitling-Oblique';
+  src: url('fonts/big_noodle_italic/BigNoodleTitling-Oblique.woff') format('woff'),
+       url('fonts/big_noodle_italic/BigNoodleTitling-Oblique.ttf') format('truetype'),
+       url('fonts/big_noodle_italic/BigNoodleTitling-Oblique.svg#BigNoodleTitling-Oblique') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'big_noodle_titling_oblique';
+  src: url('fonts/big_noodle_italic/big_noodle_titling_oblique.eot');
+  src: url('fonts/big_noodle_italic/big_noodle_titling_oblique.woff2') format('woff2'),
+       url('fonts/big_noodle_italic/big_noodle_titling_oblique.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+	margin:0!important;
+	background-image: url(images/website/bg/transp_bg.png);
+}
+
+.home{
+	max-width:300px;
+	top:5px;
+	left:15px;
+	position:absolute;
+	-webkit-filter: drop-shadow(0px 0px 16px rgba(190,0,120,0.7));
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=5, OffY=5, Color='#444')";
+	display:block;
+}

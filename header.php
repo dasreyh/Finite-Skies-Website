@@ -4,96 +4,95 @@
 <!doctype html>
 <html>
 <head>
-<!-- Our world is worth fighting for <3 -->
-   
-	<!-- FONTS -->
-	<link href="https://fonts.googleapis.com/css?family=Abel|Khand|Press+Start+2P|Raleway:300,400|Slabo+27px" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<!-- FILES -->
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<link rel="stylesheet" type="text/css" href="css/nav.css">
-	<link rel="stylesheet" type="text/css" href="css/buttons.css">
-	<!-- FAVICON -->
-	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-	<link rel="manifest" href="/manifest.json">
-	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-	<meta name="theme-color" content="#ffffff">
-	<!-- META -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="utf-8">
-	<meta name="keywords" content="Gaming,Animations,Creativity,Coding,Minecraft,Finite,Skies,Finiteskies,Seabreyh,Server">
-	<meta name="author" content="Brendan Weirtz @dasreyh">
-	<title>Home - Finite Skies</title>
-	<meta name="description" content="Finite Skies is a community of internet lovers varying from Gaming, Animations, Creativity, Coding, and Minecraft... Lots of Minecraft..."/>
-	<!-- Schema.org markup for Google+ -->
-	<meta itemprop="name" content="Finite Skies">
-	<meta itemprop="description" content="Finite Skies is a community of internet lovers varying from Gaming, Animations, Creativity, Coding, and Minecraft... Lots of Minecraft...">
-	<meta itemprop="image" content="http://finiteskies.com/images/social_icons/facebook.png">
-	<!-- Open Graph data -->
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="http://www.finiteskies.com/" />
-	<meta property="og:image" content="http://finiteskies.com/images/social_icons/facebook.png" />
-	<meta property="og:title" content="Finite Skies Homepage" />
-	<meta property="og:description" content="Finite Skies is a community of internet lovers varying from Gaming, Animations, Creativity, Coding, and Minecraft... Lots of Minecraft..." />
-	<meta property="og:site_name" content="Finite Skies" />
-	<meta property="fb:app_id" content="1962351674042688"/>
-	<meta property="fb:admins" content="weirtz" />
-	<!-- Twitter Card data -->
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:site" content="@FiniteSkies" />
-	<meta name="twitter:creator" content="@dasreyh">
-	<meta name="twitter:title" content="Finite Skies Homepage" />
-	<meta name="twitter:description" content="Finite Skies is a community of internet lovers varying from Gaming, Animations, Creativity, Coding, and Minecraft... Lots of Minecraft..." />
-	<meta name="twitter:image" content="http://finiteskies.com/images/social_icons/facebook.png" />
+
+	<script>
+	console.warn("move the body margin 0 to a global file! <3");
+	</script>
+	<style>
+		body{
+			margin:0px!important;
+			background-color: #F1F2F6;
+			font-family: 'Montserrat', sans-serif;
+			overflow-x: hidden;
+		}
+		body p{
+		}
+	</style>
+	
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,800|Questrial" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=1962351674042688";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 
-
-	<!-- FACEBOOK SDK -->
-	<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '1962351674042688',
-      xfbml      : true,
-      version    : 'v2.9'
-    });
-    FB.AppEvents.logPageView();
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
-	<div class="color-bar">
-		<div class="fullnav">
-		<div id="navbar">
-			<div class="navlinks"> 
-				<a class="navlogo" href="/../index.php"><img src="images/logo/sorbert_logo_flat4.png"></a>
-				<a class="navlink" href="index.php">HOME</a>
-				<a class="navlink" href="solstice.html">SOLSTICE</a>
-				<a class="navlink" href="solstice.html">PROJECTS</a>
-				<a class="navlink" href="https://xenforo.com/">FORUMS</a>
-				<a class="navlink" href="minecraft.html">MINECRAFT</a>
-				<a class="navlink" href="playgrounds.html">PLAYGROUNDS</a>
+	<div class="nav-color"></div>
+	<div class="nav">
+		<div class="nav-inner">
+			  <img class="nav-logo" src="/../assets/images/logo/sorbert_logo_flat.png"></li>
+			<div class="nav-links">
+				<a href="/">HOME</a></li>
+				<a href="/">NEWS</a></li>
+				<a href="/../community/">COMMUNITY</a></li>
+				<a href="/">GAMES</a></li>
+				<a href="/../radio/">RADIO</a></li>
 			</div>
 		</div>
 	</div>
+	<style>
+		
+		.nav{
+			background-color:white;
+			
+		    -webkit-box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+    		box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+			padding:0px 40px;
+			overflow: hidden;
+
+		}
 	
+		.nav-inner{
+			max-width:1000px;
+			margin:0 auto;
+			text-align: right;
+		}
+		
+		.nav-logo{
+			display:inline-block;
+			max-width:200px;
+			float:left;
+			position:relative;
+			top:18px!important;
+		}
+		.nav-links{
+			display:inline-block;
+			
+		}
+		.nav-links a{
+			padding:25px 10px;
+			display:inline-block;
+			text-decoration: none;
+			font-family: 'Questrial', sans-serif;
+			transition:0.2s all;
+			color:#353535;
+			background:red;
+			top:0px
+		}
+		.nav-links a:hover{
+			
+		
+			color:#868A9B;
+			    position: relative;
+    top: 10px;
+			
+		}
+		.nav-color{
+			height:5px;
+			background: rgb(255,91,169);
+            background: linear-gradient(90deg, rgba(255,91,169,1) 0%, rgba(223,93,255,1) 100%); 
+		}
+		
+	</style>
+<!--
+
 		<div class="navbarnote">
 			<p id="time"></p>
 			<p id="message"></p>
@@ -116,14 +115,7 @@
 				?>
 			</div>
 		</div>
-	</div>
-
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({
-          google_ad_client: "ca-pub-1720964959256584",
-          enable_page_level_ads: true
-     });
-</script>
+	-->
+	
 
 

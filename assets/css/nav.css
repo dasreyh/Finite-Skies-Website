@@ -1,0 +1,312 @@
+﻿
+
+#navbar {
+	/* OLD BG background-color:#E3035D; */
+
+	background-color:white;
+	color: white;
+	text-align: right;
+	font-family: 'Khand', sans-serif;
+	font-size: 18px;
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+	transition: 0.2s all;
+	left: 0;
+	top:none;
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.color-bar{
+	background: rgb(231,63,196);
+background: -moz-linear-gradient(-45deg, rgba(231,63,196,1) 0%, rgba(255,206,104,1) 100%);
+background: -webkit-linear-gradient(-45deg, rgba(231,63,196,1) 0%,rgba(255,206,104,1) 100%);
+background: linear-gradient(135deg, rgba(231,63,196,1) 0%,rgba(255,206,104,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e73fc4', endColorstr='#ffce68',GradientType=1 );
+	height:63px;
+	width:100%;
+	position: relative;
+}
+ @-webkit-keyframes AnimationName {
+ 0% {
+background-position:0% 50%
+}
+ 50% {
+background-position:100% 50%
+}
+ 100% {
+background-position:0% 50%
+}
+}
+@-moz-keyframes AnimationName {
+ 0% {
+background-position:0% 50%
+}
+ 50% {
+background-position:100% 50%
+}
+ 100% {
+background-position:0% 50%
+}
+}
+@-o-keyframes AnimationName {
+ 0% {
+background-position:0% 50%
+}
+ 50% {
+background-position:100% 50%
+}
+ 100% {
+background-position:0% 50%
+}
+}
+@keyframes AnimationName {
+ 0% {
+background-position:0% 50%
+}
+ 50% {
+background-position:100% 50%
+}
+ 100% {
+background-position:0% 50%
+}
+}
+#navbar-logo {
+	display: inline-block;
+	max-width: 180px;
+	position: absolute;
+	left: 5px;
+	top: 3px;
+	opacity: 0.2;
+	user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+#navbar a {
+	color: #252525;
+	text-decoration: none;
+	padding: 15px;
+	padding-bottom: 13px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: -4px;
+	transition: 0.2s all;
+	display: inline-block;
+}
+
+.navlinks{
+	margin:0 auto;
+	max-width:1300px;
+	position: relative;
+}
+
+.fullnav{
+	position: relative;
+	padding-top:7px;
+}
+
+.navlogo img{
+	max-height:30px;
+}
+.navlogo{
+	position:absolute;
+	left:20px;
+	top:13px;
+	z-index: 1000;
+	pointer-events: none;
+	padding:0px!important;
+}
+
+#navbar a .navlogo:hover{
+		color: rgba(37,37,37,0.0)!important;
+		background-color:rgba(255,255,255,0.00)!important;
+
+}
+
+
+#navbar a:hover {
+	color: white;
+	background: rgb(231,63,196);
+	background: -moz-linear-gradient(-45deg, rgba(231,63,196,1) 0%, rgba(255,206,104,1) 100%);
+	background: -webkit-linear-gradient(-45deg, rgba(231,63,196,1) 0%,rgba(255,206,104,1) 100%);
+	background: linear-gradient(135deg, rgba(231,63,196,1) 0%,rgba(255,206,104,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e73fc4', endColorstr='#ffce68',GradientType=1 );
+	background-size: 300%!important;
+	background-position: right!important;
+	
+}
+.bell {
+	color: rgba(255,255,255,1)!important;
+	text-decoration: none;
+	padding: 6.3px!important;
+	padding-left: 15px!important;
+	padding-right: 15px!important;
+	margin-left: 0px!important;
+	transition: 0.2s all;
+	font-size: 15px;
+	background-color: rgba(0,0,0,0.1)!important;
+	float: right;
+}
+.bell:hover {
+	color: rgba(255,255,255,0.4)!important;
+	background-color: rgba(0,0,0,0.2)!important;
+}
+
+.notificationBox {
+	background-color: #EFEFEF;
+	margin-top: 9px!important;
+	z-index: 6;
+	position: absolute;
+	height: 0px;
+	width: 400px;
+	overflow: hidden;
+	right: 0;
+	box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+	animation-timing-function: ease-out;
+	transition: 0.3s all;
+	color: #333;
+}
+.bell:hover .notificationBox {
+	height: 500px;
+}
+.navbarnote {
+	position: absolute;
+	top: 90px;
+	right:20px;
+	z-index: 8;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+	background-color: red;
+	color: #4B4B4B;
+	text-align: center;
+	font-family: 'Khand', sans-serif;
+	font-size: 20px;
+	padding: 5px;
+	padding-bottom: 1px!important;
+}
+.navbarnote input{
+	display: block;
+	margin:0 auto;
+}
+.activitybuttons {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.noteItem {
+	background-color: white;
+	width: 360px;
+	padding: 10px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 10px!important;
+	text-align: left!important;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+}
+.noteTitle {
+	font-family: 'Slabo 27px', serif;
+	font-size: 30px;
+	margin: 0px;
+}
+.noteTitleTop {
+	font-family: 'Slabo 27px', serif;
+	font-size: 30px;
+	margin: 0px;
+	text-align: center!important;
+	color: #CB0252;
+	margin-top: 10px!important;
+}
+.noteMessage {
+	font-family: 'Slabo 27px', serif;
+	font-size: 15px;
+	margin: 0px;
+}
+#time {
+	display: inline-block;
+	padding: 0px;
+	margin: 0px;
+	margin-right: 30px;
+	margin-bottom: -23px;
+}
+#message {
+	display: inline-block;
+	padding: 0px;
+	margin: 0px;
+}
+#logo-header {
+	background-color: white;
+	opacity: 1;
+	overflow: hidden;
+	transition: height 0.2s, opacity 0.5s;
+}
+#logo-image {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 150px;
+	display: block;
+	padding: 20px;
+	user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	opacity: 1;
+	transition: 0.6s all;
+}
+#logo-image:hover {
+	opacity: 0.5;
+}
+.sub-footer-dev {
+	background-color: #ffffff;
+	border-bottom: 1px solid rgba(0,0,0,0.12);
+	color: #999999;
+	font-weight: 100;
+	font-size: 14px;
+	text-align: center;
+	overflow: hidden;
+	padding: 3px;
+}
+.sub-footer-dev-links {
+	display : inline;
+	margin-left: -2px;
+	margin-right: -2px;
+	background-color: transparent;
+	padding: 10px 15px;
+	-webkit-transition: all 0.2s; /* Safari */
+	transition: all 0.2s;
+	-webkit-transition-timing-function: ease;
+	transition-timing-function: ease;
+	text-decoration: none;
+	font-family: "omnes-pro";
+}
+.sub-footer-dev-links:hover {
+	background-color: rgba(0,0,0,0.2);
+	color: white;
+}
+.copyright {
+	color: #999999;
+	text-align: center;
+	font-size: 13px;
+	margin: 0px;
+}
+.footer p {
+	font-family: "rift-soft"!important;
+}
+.apricity-referral {
+	text-align: center;
+	color: rgba(0,0,0,0.3);
+	font-size: 10px;
+	margin-top: -10px;
+	margin: 0px;
+}
+.apricity-referral a {
+	color: #999999;
+	margin: 0px;
+	text-decoration: none;
+}
+.footer {
+	background-color: white;
+	padding: 13px;
+}
